@@ -58,51 +58,43 @@ get_header();
 
             <?php else : ?>
 
-                <!-- INSTRUÇÃO PARA O GUILHERME — aparece quando não há fotos ainda -->
-                <div class="notice-box" style="background: linear-gradient(135deg, rgba(230,126,34,0.08), rgba(192,57,43,0.08)); border: 1px solid rgba(230,126,34,0.4); border-radius: var(--border-radius-md); padding: 2.5rem; text-align: center; margin-bottom: 3rem;" role="status" aria-label="Instruções para adicionar fotos">
-                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;" aria-hidden="true">📸</span>
-                    <h3 style="font-size: 1.25rem; color: var(--color-dark); margin-bottom: 1rem;">
-                        Adicione suas fotos aqui, Guilherme!
-                    </h3>
-                    <p style="color: var(--color-gray-600); max-width: 500px; margin: 0 auto 1.5rem; line-height: 1.7;">
-                        Para adicionar fotos à galeria, acesse o <strong>WordPress Admin > Páginas > Galeria > Editar</strong>.
-                        No editor, insira um bloco <strong>"Galeria"</strong> e faça upload das suas melhores fotos de churrascos!
-                    </p>
-                    <p style="color: var(--color-gray-500); font-size: 0.875rem;">
-                        Dica: Fotos horizontais ficam melhores na galeria. Use imagens de pelo menos 800x600px para boa qualidade.
-                    </p>
-                </div>
-
-                <!-- Galeria placeholder (demonstrativa) -->
-                <div class="gallery-grid" aria-label="Exemplos de fotos do churrasco">
+                <!-- Galeria de fotos do buffet — arquivos do tema em assets/images/galeria-home/ -->
+                <div class="gallery-grid" aria-label="Fotos do buffet de churrasco Templo do Churrasco pelo Rio de Janeiro">
 
                     <?php
-                    $placeholders = [
-                        ['emoji' => '🔥', 'label' => 'Brasa perfeita'],
-                        ['emoji' => '🥩', 'label' => 'Picanha na grelha'],
-                        ['emoji' => '👨‍🍳', 'label' => 'Guilherme em ação'],
-                        ['emoji' => '🍗', 'label' => 'Frango marinado'],
-                        ['emoji' => '🌭', 'label' => 'Linguiça artesanal'],
-                        ['emoji' => '🍽️', 'label' => 'Serviço completo'],
-                        ['emoji' => '🥗', 'label' => 'Buffet de guarnições'],
-                        ['emoji' => '🏆', 'label' => 'Evento realizado'],
-                        ['emoji' => '🎉', 'label' => 'Festa inesquecível'],
+                    $galeria_home_dir = [
+                        'camorim'         => 'Camorim',
+                        'caxias'          => 'Caxias',
+                        'iraja'           => 'Irajá',
+                        'jacarepagua'     => 'Jacarepaguá',
+                        'largo-do-bicao'  => 'Largo do Bicão',
+                        'madureira'       => 'Madureira',
+                        'olaria'          => 'Olaria',
+                        'recreio'         => 'Recreio',
+                        'rio-de-janeiro'  => 'Rio de Janeiro',
+                        'rj'              => 'Rio de Janeiro — RJ',
+                        'vila-da-penha'   => 'Vila da Penha',
+                        'vila-valqueire'  => 'Vila Valqueire',
+                        'vista-alegre'    => 'Vista Alegre',
                     ];
 
-                    foreach ( $placeholders as $i => $ph ) :
+                    foreach ( $galeria_home_dir as $slug => $bairro ) :
+                        $filename = 'buffet-de-churrasco-' . $slug . '.jpg';
+                        $img_url  = TDC_URI . '/assets/images/galeria-home/' . $filename;
+                        $alt      = 'Buffet de churrasco em ' . $bairro . ' — Templo do Churrasco';
                     ?>
                         <div class="gallery-item fade-in"
-                             style="background: linear-gradient(135deg, var(--color-dark), #2a1a1a);"
-                             role="img"
-                             aria-label="<?php echo esc_attr( $ph['label'] ); ?>">
-                            <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.3); gap: 0.5rem;">
-                                <span style="font-size: 3rem;" aria-hidden="true"><?php echo $ph['emoji']; ?></span>
-                                <span style="font-size: 0.75rem; font-family: var(--font-heading); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">
-                                    <?php echo esc_html( $ph['label'] ); ?>
-                                </span>
-                            </div>
-                            <div class="gallery-item-overlay">
-                                <span aria-hidden="true">🔍</span>
+                             data-full="<?php echo esc_url( $img_url ); ?>"
+                             role="button"
+                             tabindex="0"
+                             aria-label="Ver foto: <?php echo esc_attr( $alt ); ?>"
+                             onclick="openLightbox('<?php echo esc_js( $img_url ); ?>')"
+                             onkeypress="if(event.key==='Enter') openLightbox('<?php echo esc_js( $img_url ); ?>')">
+                            <img src="<?php echo esc_url( $img_url ); ?>"
+                                 alt="<?php echo esc_attr( $alt ); ?>"
+                                 loading="lazy">
+                            <div class="gallery-item-overlay" aria-hidden="true">
+                                <span>🔍</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
