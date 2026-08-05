@@ -1,4 +1,4 @@
-# Skill: Setup Instagram
+# Skill: Postagem Instagram
 
 Padrão fixo de organização para o conteúdo gerado (vídeos, imagens e legendas) que será postado no Instagram do Templo do Churrasco. Esse padrão deve ser sempre respeitado nas automações — elas leem e escrevem os arquivos seguindo exatamente esta estrutura.
 
