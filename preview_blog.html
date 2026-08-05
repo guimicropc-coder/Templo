@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Dicas de Churrasco | Templo do Churrasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary:#C0392B; --color-secondary:#E67E22; --color-dark:#1A1A1A;
+      --color-darker:#0d0d0d; --color-gold:#F39C12; --color-bg-light:#FFF8F0;
+      --color-white:#ffffff; --color-gray-100:#f8f9fa; --color-gray-200:#e9ecef;
+      --color-gray-300:#dee2e6; --color-gray-500:#adb5bd; --color-gray-600:#6c757d;
+      --color-gray-700:#495057; --color-gray-800:#343a40;
+      --color-whatsapp:#25D366; --color-whatsapp-dark:#1ebe57;
+      --font-heading:'Montserrat',Arial,sans-serif; --font-body:'Open Sans',Arial,sans-serif;
+      --container-max:1200px; --border-radius-full:9999px; --border-radius-md:12px;
+      --border-radius:8px; --shadow:0 4px 6px rgba(0,0,0,0.15);
+      --shadow-md:0 10px 20px rgba(0,0,0,0.19); --transition:300ms ease-in-out;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:var(--font-body);line-height:1.7;color:var(--color-gray-800);background:var(--color-white);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    a{color:var(--color-primary);text-decoration:none;}
+    ul{list-style:none;}
+    h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;line-height:1.2;color:var(--color-dark);}
+    p{margin-bottom:1rem;}p:last-child{margin-bottom:0;}
+    .container{width:100%;max-width:var(--container-max);margin:0 auto;padding:0 1.5rem;}
+    .text-center{text-align:center;}
+    .section-label{display:inline-block;font-family:var(--font-heading);font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--color-secondary);background:rgba(230,126,34,0.1);border:1px solid rgba(230,126,34,0.3);padding:0.25rem 1rem;border-radius:var(--border-radius-full);margin-bottom:1rem;}
+    .section-label.light{color:var(--color-gold);background:rgba(243,156,18,0.15);border-color:rgba(243,156,18,0.4);}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:1rem 2rem;font-family:var(--font-heading);font-size:0.875rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border:none;border-radius:var(--border-radius-full);cursor:pointer;transition:all var(--transition);text-decoration:none;white-space:nowrap;}
+    .btn:hover{transform:translateY(-2px);}
+    .btn-primary{background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:var(--color-white);box-shadow:0 4px 20px rgba(192,57,43,0.4);}
+    .btn-primary:hover{color:var(--color-white);}
+    .btn-whatsapp{background:linear-gradient(135deg,var(--color-whatsapp),var(--color-whatsapp-dark));color:var(--color-white);box-shadow:0 4px 20px rgba(37,211,102,0.4);}
+    .btn-whatsapp:hover{color:var(--color-white);}
+    .btn-sm{padding:0.5rem 1.25rem;font-size:0.8125rem;}
+
+    /* Topbar */
+    .topbar{background:var(--color-dark);color:rgba(255,255,255,0.85);padding:0.5rem 0;font-size:0.875rem;border-bottom:1px solid rgba(192,57,43,0.3);}
+    .topbar .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;}
+    .topbar-left,.topbar-right{display:flex;align-items:center;gap:1rem;}
+    .topbar-item{display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.75);}
+    .topbar-whatsapp{display:flex;align-items:center;gap:0.5rem;color:var(--color-whatsapp)!important;font-weight:600;}
+
+    /* Header */
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(26,26,26,0.97);backdrop-filter:blur(10px);border-bottom:2px solid var(--color-primary);box-shadow:0 2px 20px rgba(0,0,0,0.3);}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:75px;gap:1.5rem;}
+    .site-logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;}
+    .logo-icon{font-size:2rem;line-height:1;filter:drop-shadow(0 0 8px rgba(230,126,34,0.8));animation:flicker 3s infinite;}
+    @keyframes flicker{0%,90%,100%{opacity:1}92%{opacity:.9}94%{opacity:1}96%{opacity:.95}}
+    .logo-text{display:flex;flex-direction:column;line-height:1;}
+    .logo-text-main{font-family:var(--font-heading);font-size:1.25rem;font-weight:800;color:var(--color-white);letter-spacing:-0.02em;text-transform:uppercase;}
+    .logo-text-main span{color:var(--color-secondary);}
+    .logo-text-sub{font-size:0.75rem;color:var(--color-gray-500);letter-spacing:0.1em;text-transform:uppercase;}
+    .main-nav ul{display:flex;align-items:center;list-style:none;}
+    .main-nav ul li a{display:block;padding:0.75rem 1rem;font-family:var(--font-heading);font-size:0.875rem;font-weight:600;color:rgba(255,255,255,0.85);text-transform:uppercase;}
+    .main-nav ul li a:hover,.main-nav ul li a.active{color:var(--color-secondary);}
+    .nav-cta{background:linear-gradient(135deg,var(--color-primary),var(--color-secondary))!important;color:var(--color-white)!important;border-radius:var(--border-radius-full)!important;padding:0.5rem 1.25rem!important;margin-left:1rem!important;font-size:0.75rem!important;}
+
+    /* Page Hero */
+    .page-hero{background:linear-gradient(135deg,var(--color-darker) 0%,#2d0e0e 50%,var(--color-dark) 100%);padding:5rem 0 4rem;text-align:center;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(192,57,43,0.2) 0%,transparent 70%);pointer-events:none;}
+    .page-hero-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:var(--color-white);margin-bottom:1rem;position:relative;z-index:1;}
+    .page-hero-title span{background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .page-hero-subtitle{font-size:1.125rem;color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto;position:relative;z-index:1;}
+    .breadcrumb{display:flex;align-items:center;gap:0.5rem;justify-content:center;font-size:0.8rem;color:rgba(255,255,255,0.4);position:relative;z-index:1;margin-top:1.5rem;}
+    .breadcrumb a{color:rgba(255,255,255,0.5);}
+    .breadcrumb-sep{color:rgba(255,255,255,0.3);}
+
+    /* Blog Layout */
+    .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
+    .blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+
+    /* Blog Card */
+    .blog-card{background:var(--color-white);border-radius:var(--border-radius-md);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition);display:flex;flex-direction:column;}
+    .blog-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+    .blog-card-img-wrapper{position:relative;overflow:hidden;aspect-ratio:16/9;}
+    .blog-card-img-placeholder{width:100%;height:100%;min-height:180px;background:linear-gradient(135deg,var(--color-dark),#2a1a1a);display:flex;align-items:center;justify-content:center;font-size:3rem;}
+    .blog-card-category{position:absolute;top:0.75rem;left:0.75rem;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:white;padding:0.2rem 0.75rem;border-radius:var(--border-radius-full);font-family:var(--font-heading);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;}
+    .blog-card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;}
+    .blog-card-meta{display:flex;gap:1rem;font-size:0.75rem;color:var(--color-gray-500);font-family:var(--font-heading);margin-bottom:0.75rem;}
+    .blog-card-title{font-size:1.0625rem;font-weight:700;color:var(--color-dark);margin-bottom:0.75rem;line-height:1.4;flex:1;}
+    .blog-card-title a{color:inherit;text-decoration:none;transition:color var(--transition);}
+    .blog-card-title a:hover{color:var(--color-primary);}
+    .blog-card-excerpt{font-size:0.875rem;color:var(--color-gray-600);line-height:1.7;margin-bottom:1rem;}
+    .blog-card-link{display:inline-flex;align-items:center;gap:0.4rem;font-family:var(--font-heading);font-size:0.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:0.05em;text-decoration:none;margin-top:auto;transition:gap var(--transition);}
+    .blog-card-link:hover{gap:0.75rem;color:var(--color-secondary);}
+
+    /* Sidebar */
+    .sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:100px;}
+    .sidebar-widget{background:var(--color-white);border-radius:var(--border-radius-md);padding:1.5rem;box-shadow:var(--shadow);}
+    .sidebar-widget-title{font-size:1rem;font-weight:700;color:var(--color-dark);margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:2px solid var(--color-gray-200);}
+    .sidebar-cta{background:linear-gradient(135deg,var(--color-dark),#2a1a1a);border-radius:var(--border-radius-md);padding:1.5rem;color:rgba(255,255,255,0.85);}
+    .sidebar-cta p{font-size:0.875rem;color:rgba(255,255,255,0.7);margin-bottom:1rem;line-height:1.7;}
+    .widget-list li{border-bottom:1px solid var(--color-gray-200);}
+    .widget-list li:last-child{border-bottom:none;}
+    .widget-list li a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0;font-size:0.875rem;color:var(--color-gray-700);text-decoration:none;transition:color var(--transition);}
+    .widget-list li a:hover{color:var(--color-primary);}
+    .widget-count{background:var(--color-gray-100);color:var(--color-gray-600);font-size:0.7rem;font-family:var(--font-heading);font-weight:700;padding:0.1rem 0.5rem;border-radius:var(--border-radius-full);}
+    .tag{display:inline-block;background:var(--color-gray-100);color:var(--color-gray-700);padding:0.25rem 0.75rem;border-radius:var(--border-radius-full);font-size:0.75rem;font-family:var(--font-heading);font-weight:600;border:1px solid var(--color-gray-300);text-decoration:none;transition:all var(--transition);margin:0.2rem 0.1rem;}
+    .tag:hover{background:var(--color-primary);color:white;border-color:var(--color-primary);}
+
+    /* Empty state */
+    .empty-card{background:var(--color-white);border-radius:var(--border-radius-md);padding:2rem;text-align:center;box-shadow:var(--shadow);opacity:0.55;border:2px dashed var(--color-gray-300);}
+    .empty-card-emoji{font-size:2.5rem;display:block;margin-bottom:0.75rem;}
+    .empty-card-title{font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--color-gray-600);}
+
+    /* WhatsApp float */
+    .whatsapp-float{position:fixed;bottom:2rem;right:2rem;z-index:999;width:56px;height:56px;background:var(--color-whatsapp);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.75rem;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;transition:all var(--transition);}
+    .whatsapp-float:hover{transform:scale(1.1);}
+
+    /* Fade-in */
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+
+    @media(max-width:768px){
+      .blog-layout{grid-template-columns:1fr;}
+      .blog-grid{grid-template-columns:1fr;}
+      .main-nav{display:none;}
+      .topbar-left{display:none;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">🔥 Mais de 380 eventos realizados no Rio de Janeiro</span>
+    </div>
+    <div class="topbar-right">
+      <a href="https://wa.me/5521998594584" class="topbar-whatsapp" target="_blank">📱 (21) 99859-4584</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="preview_templo_churrasco.html" class="site-logo">
+        <span class="logo-icon">🔥</span>
+        <div class="logo-text">
+          <span class="logo-text-main">Templo do <span>Churrasco</span></span>
+          <span class="logo-text-sub">Churrasqueiro Gourmet • Rio de Janeiro</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="preview_templo_churrasco.html">Início</a></li>
+          <li><a href="page-servicos.html">Serviços</a></li>
+          <li><a href="preview_galeria.html">Galeria</a></li>
+          <li><a href="preview_blog.html" class="active">Blog</a></li>
+          <li><a href="preview_calculadora.html">Calculadora</a></li>
+          <li><a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+um+orçamento" target="_blank" class="nav-cta">Orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label light">Aprenda com quem entende</span>
+    <h1 class="page-hero-title">Blog — <span>Dicas de Churrasco</span> 🔥</h1>
+    <p class="page-hero-subtitle">Segredos, técnicas e receitas para você fazer (ou contratar) o churrasco perfeito. Tudo do Guilherme Santos, churrasqueiro gourmet no Rio de Janeiro.</p>
+    <div class="breadcrumb">
+      <a href="preview_templo_churrasco.html">Início</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Blog</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section style="background:var(--color-bg-light);padding:4rem 0;">
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- POSTS -->
+      <main>
+        <div class="blog-grid">
+
+          <!-- Post publicado -->
+          <article class="blog-card fade-in">
+            <div class="blog-card-img-wrapper">
+              <div class="blog-card-img-placeholder">🔥</div>
+              <span class="blog-card-category">Curiosidades</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>10 Abr 2026</span>
+                <span>8 min de leitura</span>
+              </div>
+              <h2 class="blog-card-title">
+                <a href="post-churrasco-vs-parrilla.html">Churrasco Brasileiro x Parrilla Argentina: Tudo que você precisa saber 🔥</a>
+              </h2>
+              <p class="blog-card-excerpt">Da história às técnicas, cortes, temperos e as diferenças que fazem cada tradição única. Um guia completo feito por quem vive disso na brasa.</p>
+              <a href="post-churrasco-vs-parrilla.html" class="blog-card-link">Ler artigo →</a>
+            </div>
+          </article>
+
+          <!-- Próximos posts (placeholders) -->
+          <div class="empty-card fade-in">
+            <span class="empty-card-emoji">🥩</span>
+            <div class="empty-card-title">Próximo post chegando em breve...</div>
+          </div>
+          <div class="empty-card fade-in">
+            <span class="empty-card-emoji">🍖</span>
+            <div class="empty-card-title">Próximo post chegando em breve...</div>
+          </div>
+          <div class="empty-card fade-in">
+            <span class="empty-card-emoji">🔥</span>
+            <div class="empty-card-title">Próximo post chegando em breve...</div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <!-- CTA -->
+        <div class="sidebar-cta">
+          <h3 style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;color:white;margin-bottom:0.75rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(230,126,34,0.4);">🔥 Quer o churrasco perfeito?</h3>
+          <p>Chama o Guilherme! 380+ eventos realizados no Rio de Janeiro com 100% de satisfação.</p>
+          <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Estava+lendo+o+blog+e+quero+solicitar+um+orçamento!"
+             class="btn btn-whatsapp btn-sm" target="_blank" style="width:100%;justify-content:center;">
+            Solicitar Orçamento
+          </a>
+        </div>
+
+        <!-- Categorias -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-widget-title">Categorias</h3>
+          <ul class="widget-list">
+            <li><a href="#">Curiosidades <span class="widget-count">1</span></a></li>
+            <li><a href="#">Técnicas <span class="widget-count">0</span></a></li>
+            <li><a href="#">Receitas <span class="widget-count">0</span></a></li>
+            <li><a href="#">Dicas de Cortes <span class="widget-count">0</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Posts recentes -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-widget-title">Posts Recentes</h3>
+          <ul class="widget-list">
+            <li><a href="post-churrasco-vs-parrilla.html">Churrasco Brasileiro x Parrilla Argentina 🔥</a></li>
+          </ul>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-widget">
+          <h3 class="sidebar-widget-title">Tags</h3>
+          <div>
+            <a href="#" class="tag">Churrasco</a>
+            <a href="#" class="tag">Parrilla</a>
+            <a href="#" class="tag">Técnicas</a>
+            <a href="#" class="tag">Curiosidades</a>
+            <a href="#" class="tag">Picanha</a>
+            <a href="#" class="tag">Brasa Viva</a>
+            <a href="#" class="tag">Rio de Janeiro</a>
+          </div>
+        </div>
+
+        <!-- Calculadora -->
+        <div class="sidebar-widget" style="text-align:center;background:var(--color-bg-light);border:1px solid var(--color-gray-200);">
+          <span style="font-size:2.5rem;display:block;margin-bottom:0.75rem;">🧮</span>
+          <h3 style="font-size:1rem;color:var(--color-dark);margin-bottom:0.5rem;">Calculadora de Carne</h3>
+          <p style="font-size:0.8125rem;color:var(--color-gray-600);margin-bottom:1rem;">Descubra quanto de carne você precisa para o seu churrasco!</p>
+          <a href="preview_calculadora.html" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;font-size:0.8rem;">Calcular agora</a>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+solicitar+um+orçamento" class="whatsapp-float" target="_blank">📱</a>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold:0.1});
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

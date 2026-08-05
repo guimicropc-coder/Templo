@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churrasco Brasileiro x Parrilla Argentina: Tudo que você precisa saber — Templo do Churrasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #C0392B; --color-secondary: #E67E22; --color-dark: #1A1A1A;
+      --color-darker: #0d0d0d; --color-gold: #F39C12; --color-bg-light: #FFF8F0;
+      --color-bg-section: #fdf3e7; --color-white: #ffffff;
+      --color-gray-100: #f8f9fa; --color-gray-200: #e9ecef; --color-gray-300: #dee2e6;
+      --color-gray-500: #adb5bd; --color-gray-600: #6c757d; --color-gray-700: #495057;
+      --color-gray-800: #343a40; --color-whatsapp: #25D366; --color-whatsapp-dark: #1ebe57;
+      --font-heading: 'Montserrat', Arial, sans-serif; --font-body: 'Open Sans', Arial, sans-serif;
+      --container-max: 1200px; --border-radius-full: 9999px; --border-radius-md: 12px;
+      --border-radius: 8px; --shadow: 0 4px 6px rgba(0,0,0,0.15);
+      --shadow-md: 0 10px 20px rgba(0,0,0,0.19); --shadow-lg: 0 20px 40px rgba(0,0,0,0.25);
+      --transition: 300ms ease-in-out;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: var(--font-body); line-height: 1.7; color: var(--color-gray-800); background: var(--color-white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    a { color: var(--color-primary); text-decoration: none; }
+    ul { list-style: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; color: var(--color-dark); }
+    p { margin-bottom: 1.25rem; } p:last-child { margin-bottom: 0; }
+    .container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
+    .text-center { text-align: center; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; font-family: var(--font-heading); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: var(--border-radius-full); cursor: pointer; transition: all var(--transition); text-decoration: none; white-space: nowrap; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: var(--color-white); box-shadow: 0 4px 20px rgba(192,57,43,0.4); }
+    .btn-primary:hover { color: var(--color-white); }
+    .btn-whatsapp { background: linear-gradient(135deg, var(--color-whatsapp), var(--color-whatsapp-dark)); color: var(--color-white); box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    .btn-whatsapp:hover { color: var(--color-white); box-shadow: 0 8px 30px rgba(37,211,102,0.6); }
+    .btn-sm { padding: 0.5rem 1.25rem; font-size: 0.8125rem; }
+    .btn-lg { padding: 1.25rem 3rem; font-size: 1rem; }
+
+    /* Topbar */
+    .topbar { background: var(--color-dark); color: rgba(255,255,255,0.85); padding: 0.5rem 0; font-size: 0.875rem; border-bottom: 1px solid rgba(192,57,43,0.3); }
+    .topbar .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+    .topbar-left, .topbar-right { display: flex; align-items: center; gap: 1rem; }
+    .topbar-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.75); }
+    .topbar-whatsapp { display: flex; align-items: center; gap: 0.5rem; color: var(--color-whatsapp) !important; font-weight: 600; }
+
+    /* Header */
+    .site-header { position: sticky; top: 0; z-index: 1000; background: rgba(26,26,26,0.97); backdrop-filter: blur(10px); border-bottom: 2px solid var(--color-primary); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 75px; gap: 1.5rem; }
+    .site-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .logo-icon { font-size: 2rem; line-height: 1; filter: drop-shadow(0 0 8px rgba(230,126,34,0.8)); animation: flicker 3s infinite; }
+    @keyframes flicker { 0%,90%,100%{opacity:1}92%{opacity:.9}94%{opacity:1}96%{opacity:.95} }
+    .logo-text { display: flex; flex-direction: column; line-height: 1; }
+    .logo-text-main { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-white); letter-spacing: -0.02em; text-transform: uppercase; }
+    .logo-text-main span { color: var(--color-secondary); }
+    .logo-text-sub { font-size: 0.75rem; color: var(--color-gray-500); letter-spacing: 0.1em; text-transform: uppercase; }
+    .main-nav ul { display: flex; align-items: center; list-style: none; }
+    .main-nav ul li a { display: block; padding: 0.75rem 1rem; font-family: var(--font-heading); font-size: 0.875rem; font-weight: 600; color: rgba(255,255,255,0.85); text-transform: uppercase; }
+    .main-nav ul li a:hover { color: var(--color-secondary); }
+    .nav-cta { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) !important; color: var(--color-white) !important; border-radius: var(--border-radius-full) !important; padding: 0.5rem 1.25rem !important; margin-left: 1rem !important; font-size: 0.75rem !important; }
+
+    /* Post Header */
+    .post-header { background: linear-gradient(135deg, var(--color-darker) 0%, #2d0a0a 50%, var(--color-dark) 100%); padding: 4rem 0 3rem; position: relative; overflow: hidden; }
+    .post-header::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(192,57,43,0.25) 0%, transparent 70%); pointer-events: none; }
+    .post-header .container { position: relative; z-index: 1; max-width: 860px; }
+    .post-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.875rem; color: rgba(255,255,255,0.5); }
+    .post-category-badge { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: white; padding: 0.25rem 1rem; border-radius: var(--border-radius-full); font-family: var(--font-heading); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+    .post-meta span { display: flex; align-items: center; gap: 0.4rem; }
+    .post-title { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 900; color: var(--color-white); line-height: 1.15; }
+    .post-title span { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* Post Content Area */
+    .post-body { background: var(--color-bg-light); padding: 4rem 0; }
+    .post-content-wrap { max-width: 800px; margin: 0 auto; }
+
+    /* Article typography */
+    .post-content { font-size: 1.0625rem; line-height: 1.85; color: var(--color-gray-800); }
+    .post-content p { margin-bottom: 1.5rem; }
+    .post-content h2 { font-size: 1.625rem; font-weight: 800; color: var(--color-dark); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 3px solid; border-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary)) 1; }
+    .post-content h3 { font-size: 1.25rem; font-weight: 700; color: var(--color-dark); margin: 2rem 0 0.75rem; }
+    .post-content ul, .post-content ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+    .post-content ul { list-style: none; padding-left: 0; }
+    .post-content ul li { padding-left: 1.75rem; position: relative; margin-bottom: 0.5rem; }
+    .post-content ul li::before { content: '🔥'; position: absolute; left: 0; font-size: 0.875rem; }
+    .post-content ol { list-style: decimal; }
+    .post-content ol li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+    .post-content strong { color: var(--color-dark); font-weight: 700; }
+    .post-content em { font-style: italic; color: var(--color-gray-700); }
+    .post-content blockquote { border-left: 4px solid var(--color-secondary); background: rgba(230,126,34,0.06); padding: 1.25rem 1.5rem; border-radius: 0 var(--border-radius) var(--border-radius) 0; margin: 2rem 0; font-style: italic; color: var(--color-gray-700); font-size: 1.05rem; }
+    .post-content blockquote strong { color: var(--color-secondary); }
+
+    /* Info box */
+    .info-box { background: linear-gradient(135deg, rgba(192,57,43,0.06), rgba(230,126,34,0.06)); border: 1px solid rgba(230,126,34,0.35); border-radius: var(--border-radius-md); padding: 1.5rem 2rem; margin: 2rem 0; }
+    .info-box-title { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: 0.75rem; }
+    .info-box p { margin-bottom: 0.5rem; font-size: 0.9375rem; }
+    .info-box p:last-child { margin-bottom: 0; }
+
+    /* Comparison table */
+    .compare-table { width: 100%; border-collapse: collapse; margin: 2rem 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow); }
+    .compare-table th { background: linear-gradient(135deg, var(--color-dark), #2a1a1a); color: white; padding: 1rem 1.25rem; font-family: var(--font-heading); font-size: 0.875rem; font-weight: 700; text-align: left; letter-spacing: 0.05em; text-transform: uppercase; }
+    .compare-table th:first-child { background: rgba(0,0,0,0.5); color: rgba(255,255,255,0.6); }
+    .compare-table th.br { background: linear-gradient(135deg, var(--color-primary), #a93226); }
+    .compare-table th.ar { background: linear-gradient(135deg, #2471a3, #1a5276); }
+    .compare-table td { padding: 0.875rem 1.25rem; font-size: 0.9rem; border-bottom: 1px solid var(--color-gray-200); vertical-align: top; }
+    .compare-table td:first-child { font-family: var(--font-heading); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-gray-600); background: var(--color-gray-100); }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(even) td:not(:first-child) { background: rgba(255,248,240,0.5); }
+
+    /* Curiosity cards */
+    .curiosity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin: 2rem 0; }
+    .curiosity-card { background: var(--color-white); border: 1px solid var(--color-gray-200); border-radius: var(--border-radius-md); padding: 1.5rem; box-shadow: var(--shadow); transition: transform var(--transition); }
+    .curiosity-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .curiosity-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .curiosity-title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--color-dark); margin-bottom: 0.5rem; }
+    .curiosity-text { font-size: 0.875rem; color: var(--color-gray-600); line-height: 1.6; margin-bottom: 0; }
+
+    /* Tags */
+    .tag { display: inline-block; background: var(--color-gray-100); color: var(--color-gray-700); padding: 0.25rem 0.75rem; border-radius: var(--border-radius-full); font-size: 0.8rem; font-family: var(--font-heading); font-weight: 600; border: 1px solid var(--color-gray-300); text-decoration: none; transition: all var(--transition); margin: 0.25rem 0.15rem 0.25rem 0; }
+    .tag:hover { background: var(--color-primary); color: white; border-color: var(--color-primary); }
+
+    /* Share buttons */
+    .share-buttons { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 1.5rem 0; border-top: 1px solid var(--color-gray-200); border-bottom: 1px solid var(--color-gray-200); margin: 2rem 0; }
+    .share-label { font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray-600); margin-right: 0.25rem; }
+    .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: var(--border-radius-full); font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all var(--transition); border: none; text-decoration: none; }
+    .share-btn.whatsapp { background: var(--color-whatsapp); color: white; }
+    .share-btn.whatsapp:hover { background: var(--color-whatsapp-dark); color: white; }
+    .share-btn-copy { background: rgba(0,0,0,0.06); color: var(--color-gray-700); border: 1px solid var(--color-gray-200) !important; }
+
+    /* Author box */
+    .author-box { display: flex; gap: 1.5rem; background: var(--color-white); border-radius: var(--border-radius-md); padding: 1.75rem; box-shadow: var(--shadow); margin-top: 2.5rem; border: 1px solid var(--color-gray-200); }
+    .author-avatar { flex-shrink: 0; width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); display: flex; align-items: center; justify-content: center; font-size: 2.25rem; }
+    .author-name { font-family: var(--font-heading); font-size: 1.125rem; font-weight: 800; color: var(--color-dark); margin-bottom: 0.2rem; }
+    .author-role { font-size: 0.8rem; color: var(--color-secondary); font-weight: 600; margin-bottom: 0.75rem; font-family: var(--font-heading); }
+    .author-bio { font-size: 0.9rem; color: var(--color-gray-600); line-height: 1.7; margin-bottom: 0; }
+
+    /* CTA inline */
+    .post-cta { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); padding: 3rem 0; text-align: center; }
+    .post-cta h2 { font-size: 1.75rem; color: white; margin-bottom: 1rem; }
+    .post-cta p { color: rgba(255,255,255,0.85); margin-bottom: 2rem; font-size: 1rem; }
+
+    /* WhatsApp float */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; width: 56px; height: 56px; background: var(--color-whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; box-shadow: 0 4px 20px rgba(37,211,102,0.5); text-decoration: none; transition: all var(--transition); }
+    .whatsapp-float:hover { transform: scale(1.1); }
+
+    /* Divider */
+    .fire-divider { text-align: center; margin: 2.5rem 0; font-size: 1.5rem; letter-spacing: 0.5rem; opacity: 0.4; }
+
+    @media (max-width: 768px) {
+      .curiosity-grid { grid-template-columns: 1fr; }
+      .compare-table { font-size: 0.8rem; }
+      .compare-table th, .compare-table td { padding: 0.75rem; }
+      .author-box { flex-direction: column; align-items: center; text-align: center; }
+      .main-nav { display: none; }
+      .topbar-left { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">🔥 Mais de 380 eventos realizados no Rio de Janeiro</span>
+    </div>
+    <div class="topbar-right">
+      <a href="https://wa.me/5521998594584" class="topbar-whatsapp" target="_blank">📱 (21) 99859-4584</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="preview_templo_churrasco.html" class="site-logo">
+        <span class="logo-icon">🔥</span>
+        <div class="logo-text">
+          <span class="logo-text-main">Templo do <span>Churrasco</span></span>
+          <span class="logo-text-sub">Churrasqueiro Gourmet • Rio de Janeiro</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="preview_templo_churrasco.html">Início</a></li>
+          <li><a href="page-servicos.html">Serviços</a></li>
+          <li><a href="preview_galeria.html">Galeria</a></li>
+          <li><a href="preview_calculadora.html">Calculadora</a></li>
+          <li><a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+um+orçamento" target="_blank" class="nav-cta">Orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- POST HEADER -->
+<header class="post-header">
+  <div class="container">
+    <div class="post-meta">
+      <a href="#" class="post-category-badge">Curiosidades</a>
+      <span>📅 10 de abril de 2026</span>
+      <span>⏱️ 8 min de leitura</span>
+      <span>Por <strong style="color: var(--color-secondary);">Guilherme Santos</strong></span>
+    </div>
+    <h1 class="post-title">
+      Churrasco Brasileiro x <span>Parrilla Argentina</span>:<br>Tudo que você precisa saber 🔥🥩
+    </h1>
+  </div>
+</header>
+
+<!-- POST BODY -->
+<div class="post-body">
+  <div class="container">
+    <div class="post-content-wrap">
+
+      <article class="post-content">
+
+        <p>
+          Se tem uma discussão que esquenta mais do que a brasa, é essa: <strong>churrasco brasileiro ou parrilla argentina?</strong>
+          Dos dois lados da fronteira, tem gente apaixonada defendendo a sua tradição com unhas e dentes — e com bastante fumaça no meio.
+          Mas aqui no Templo do Churrasco, a gente respeita os dois, aprende com os dois e, claro, faz o melhor dos dois lados na brasa. 🔥
+        </p>
+
+        <p>
+          Neste post, vou te contar tudo: a história, as técnicas, os cortes, os temperos, os equipamentos e as curiosidades que só quem vive de churrasco de verdade conhece.
+          Bora acender o fogo?
+        </p>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- HISTÓRIA -->
+        <h2>📜 A história por trás do fogo</h2>
+
+        <h3>O churrasco brasileiro</h3>
+        <p>
+          O churrasco no Brasil tem raízes nos <strong>gaúchos do Rio Grande do Sul</strong>, lá pelo século XVII e XVIII.
+          Os peões das estâncias da Pampa assavam carne diretamente na brasa — sem prato, sem talheres, sem frescura.
+          Com a faca, cortavam direto do espeto e comiam de pé, em pé do fogo. Simples, primitivo e absurdamente gostoso.
+        </p>
+        <p>
+          Com o tempo, essa tradição foi se espalhando pelo Brasil inteiro e ganhando novos cortes, novos jeitos e novas influências.
+          Hoje o churrasco brasileiro é uma das maiores expressões culturais do país — presente em aniversários, casamentos, domingos em família e qualquer desculpa que a gente invente. 😄
+        </p>
+
+        <h3>A parrilla argentina</h3>
+        <p>
+          Do outro lado do Rio da Prata, os <strong>gauchos argentinos</strong> desenvolveram a sua própria tradição também a partir das estâncias da Pampa compartilhada.
+          A palavra "parrilla" significa grelha em espanhol, e é justamente o equipamento que dá nome à técnica toda.
+        </p>
+        <p>
+          A Argentina foi colonizada fortemente por italianos e espanhóis, e isso influenciou muito o jeito de temperar e de preparar a carne.
+          O <strong>asado</strong> (como eles chamam) virou símbolo nacional — tão importante quanto o tango e o futebol.
+        </p>
+
+        <div class="info-box">
+          <div class="info-box-title">💡 Sabia que...</div>
+          <p>A Argentina é um dos maiores consumidores de carne bovina per capita do mundo, com média de quase <strong>50 kg por pessoa por ano</strong>. O Brasil fica próximo, com cerca de <strong>42 kg por pessoa ao ano</strong>.</p>
+        </div>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- TÉCNICAS -->
+        <h2>🔥 As técnicas: onde mora a diferença</h2>
+
+        <h3>Churrasco brasileiro — brasa viva e espeto</h3>
+        <p>
+          No Brasil, a tradição é assar a carne no <strong>espeto</strong>, posicionado sobre brasas bem vivas, com calor intenso e direto.
+          A carne fica girando (no estilo rodízio) ou estática sobre a grelha, dependendo da região e do estilo do churrasqueiro.
+        </p>
+        <p>
+          O segredo está no <strong>controle da brasa</strong>: nem chama viva (que queima por fora e deixa cru por dentro), nem brasa morta (que resseca a carne).
+          É esse equilíbrio que o Método Brasa Viva busca a cada evento — calor certo, no momento certo, para cada corte.
+        </p>
+
+        <h3>Parrilla argentina — fogo indireto e paciência</h3>
+        <p>
+          Na Argentina, o segredo é o <strong>fogo indireto e a paciência</strong>. A parrilla (grelha inclinada) fica posicionada ao lado ou acima da brasa,
+          e a carne assa lentamente com calor mais suave, por mais tempo.
+        </p>
+        <p>
+          O asador (churrasqueiro argentino) acende a lenha ou o carvão de um lado e vai jogando a brasa embaixo da grelha aos poucos.
+          Resultado: uma carne que assa de dentro para fora, com textura mais macia e sabor mais profundo. Técnica diferente, mas igualmente respeitável. 🙌
+        </p>
+
+        <blockquote>
+          <strong>"No churrasco brasileiro, a brasa manda. Na parrilla argentina, a paciência manda."</strong><br>
+          — Guilherme Santos, Templo do Churrasco
+        </blockquote>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- TABELA COMPARATIVA -->
+        <h2>📊 Comparativo: churrasco brasileiro x parrilla argentina</h2>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th class="br">🇧🇷 Churrasco Brasileiro</th>
+              <th class="ar">🇦🇷 Parrilla Argentina</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Equipamento</td>
+              <td>Churrasqueira de alvenaria, espeto ou grelha horizontal</td>
+              <td>Parrilla inclinada (grelha com ajuste de altura)</td>
+            </tr>
+            <tr>
+              <td>Combustível</td>
+              <td>Carvão vegetal (principal), briquete ou lenha</td>
+              <td>Lenha de quebracho ou carvão, brasa deslocada</td>
+            </tr>
+            <tr>
+              <td>Técnica de calor</td>
+              <td>Calor direto e intenso sobre a brasa</td>
+              <td>Calor indireto, mais suave e prolongado</td>
+            </tr>
+            <tr>
+              <td>Tempo de preparo</td>
+              <td>Mais rápido (30–60 min para peças menores)</td>
+              <td>Mais lento (1–3h para costela e peças grandes)</td>
+            </tr>
+            <tr>
+              <td>Tempero principal</td>
+              <td>Sal grosso — simples e eficiente</td>
+              <td>Chimichurri (azeite, alho, ervas, vinagre)</td>
+            </tr>
+            <tr>
+              <td>Cortes mais usados</td>
+              <td>Picanha, alcatra, fraldinha, maminha, costela</td>
+              <td>Asado de tira (costela fina), vazio, bife de chorizo, entraña</td>
+            </tr>
+            <tr>
+              <td>Ponto preferido</td>
+              <td>Mal passado a ao ponto (com sangue aceito)</td>
+              <td>Ao ponto para bem passado (tradição mais cozida)</td>
+            </tr>
+            <tr>
+              <td>Acompanhamentos</td>
+              <td>Arroz, farofa, vinagrete, pão de queijo, saladas</td>
+              <td>Chimichurri, salada criolla, pão artesanal, provoleta</td>
+            </tr>
+            <tr>
+              <td>Evento típico</td>
+              <td>Aniversário, reunião de família, churrasquinho de domingo</td>
+              <td>Asado dos finais de semana, evento familiar longo</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- CORTES -->
+        <h2>🥩 Os cortes: cada país tem seus favoritos</h2>
+
+        <h3>Os cortes clássicos do Brasil</h3>
+        <ul>
+          <li><strong>Picanha</strong> — a rainha do churrasco brasileiro. Com capa de gordura generosa, assada com sal grosso, é o corte mais pedido e mais amado.</li>
+          <li><strong>Alcatra</strong> — macia, suculenta e versátil. Perfeita para quem quer sabor sem tanta gordura.</li>
+          <li><strong>Fraldinha</strong> — fibras longas, sabor intenso. Precisa de brasa controlada para não ressecar.</li>
+          <li><strong>Maminha</strong> — a pedida certa para quem quer maciez. Fica incrivelmente boa com alho e ervas.</li>
+          <li><strong>Costela</strong> — exige paciência e fogo baixo. Quando feita do jeito certo, é de cair o queixo.</li>
+          <li><strong>Cupim</strong> — cheio de gordura entremeada, derrete na boca. É o corte mais difícil, mas o mais recompensador.</li>
+          <li><strong>Linguiça artesanal</strong> — sempre presente e sempre bem-vinda. Começa a festa enquanto as carnes nobres ainda assam.</li>
+        </ul>
+
+        <h3>Os cortes estrela da Argentina</h3>
+        <ul>
+          <li><strong>Asado de tira</strong> — costela cortada na transversal, fina. Assa rápido e tem sabor incomparável.</li>
+          <li><strong>Bife de chorizo</strong> — é o contrafilé argentino. Um corte generoso, com gordura na borda, muito suculento.</li>
+          <li><strong>Entraña</strong> — o fraldão, corte fino e saboroso que os argentinos dominam como ninguém.</li>
+          <li><strong>Vazio</strong> — equivalente à fraldinha brasileira. Assa lento e fica incrivelmente macio.</li>
+          <li><strong>Mollejas</strong> — miúdos (timo bovino) assados na grelha. Polêmico para os brasileiros, venerado pelos argentinos.</li>
+          <li><strong>Provoleta</strong> — queijo provolone direto na grelha. Entrada clássica do asado argentino.</li>
+        </ul>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- TEMPERO -->
+        <h2>🧂 O tempero: simples ou elaborado?</h2>
+
+        <p>
+          Aqui está uma das maiores diferenças filosóficas entre os dois estilos:
+        </p>
+
+        <h3>Brasil: o culto ao sal grosso</h3>
+        <p>
+          O churrasqueiro brasileiro de verdade usa <strong>sal grosso e só</strong>. A ideia é não mascarar o sabor natural da carne — deixar a qualidade do corte falar por si.
+          O sal grosso cria uma casca por fora que sela o suco dentro da carne durante o assado. Simples, eficiente, perfeito.
+        </p>
+        <p>
+          No Templo do Churrasco, eu tempero as carnes <strong>24 horas antes</strong> para que o sal penetre e a carne desenvolva sabor de dentro para fora. Isso faz toda a diferença no resultado final.
+        </p>
+
+        <h3>Argentina: o chimichurri sagrado</h3>
+        <p>
+          Na Argentina, o <strong>chimichurri</strong> é quase uma religião. Feito com azeite, alho, salsinha, orégano, páprica e vinagre,
+          é usado tanto para marinar quanto para acompanhar a carne já no prato.
+          Cada família argentina tem a sua receita secreta — e ninguém abre mão dela.
+        </p>
+
+        <div class="info-box">
+          <div class="info-box-title">🌿 Receita clássica de Chimichurri</div>
+          <p>• 1 xícara de salsinha fresca picada</p>
+          <p>• 4 dentes de alho amassados</p>
+          <p>• 3 colheres de azeite extra virgem</p>
+          <p>• 2 colheres de vinagre de vinho tinto</p>
+          <p>• 1 colher de orégano seco</p>
+          <p>• Páprica picante, sal e pimenta a gosto</p>
+          <p>Misture tudo, deixe descansar 30 minutos antes de usar. 🇦🇷</p>
+        </div>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- CURIOSIDADES -->
+        <h2>🤯 10 curiosidades que vão te surpreender</h2>
+
+        <div class="curiosity-grid">
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🏆</span>
+            <div class="curiosity-title">O Brasil é o 2º maior exportador</div>
+            <p class="curiosity-text">O Brasil é o segundo maior exportador de carne bovina do mundo, atrás apenas da Austrália. São mais de 2 milhões de toneladas exportadas por ano.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🇦🇷</span>
+            <div class="curiosity-title">A picanha não existe na Argentina</div>
+            <p class="curiosity-text">A famosa picanha brasileira não tem equivalente direto no corte argentino. Por lá, essa parte do boi entra misturada em outros cortes e não é tão valorizada.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🔥</span>
+            <div class="curiosity-title">O carvão de quebracho</div>
+            <p class="curiosity-text">Na Argentina, o carvão mais valorizado é o de quebracho, madeira nativa muito densa que gera brasa de altíssima temperatura por muito mais tempo que o carvão comum.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">⏰</span>
+            <div class="curiosity-title">O asado pode durar horas</div>
+            <p class="curiosity-text">Um asado argentino tradicional pode durar 4 a 6 horas — entre acender o fogo, assar as peças em sequência e o ritual social ao redor da parrilla.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🍖</span>
+            <div class="curiosity-title">A costela tem dois mundos</div>
+            <p class="curiosity-text">No Brasil, a costela assada no barranco ou no fogo de chão pode levar até 8 horas. Na Argentina, o "asado de tira" é cortado fino e assa em 20 minutos. Mesma peça, mundos diferentes.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🧂</span>
+            <div class="curiosity-title">O sal grosso como protetor</div>
+            <p class="curiosity-text">O sal grosso não tempera apenas — ele forma uma camada protetora que impede a perda de líquido pela carne durante o assado, mantendo a suculência.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🐄</span>
+            <div class="curiosity-title">Raças bovinas diferentes</div>
+            <p class="curiosity-text">O Brasil usa muito boi nelore (zebuíno), adaptado ao clima tropical, com carne mais firme. A Argentina usa principalmente o angus e hereford (taurinos), com carne mais marmoreada e suave.</p>
+          </div>
+          <div class="curiosity-card">
+            <span class="curiosity-icon">🌎</span>
+            <div class="curiosity-title">O churrasco virou patrimônio</div>
+            <p class="curiosity-text">O churrasco gaúcho foi reconhecido como Patrimônio Cultural Imaterial Brasileiro em 2008. Na Argentina, o asado é candidato a patrimônio cultural da humanidade pela UNESCO.</p>
+          </div>
+        </div>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- EQUIPAMENTOS -->
+        <h2>🛠️ Equipamentos: a churrasqueira x a parrilla</h2>
+
+        <h3>A churrasqueira brasileira</h3>
+        <p>
+          A churrasqueira brasileira clássica é de <strong>alvenaria</strong> — construída na área de lazer, com gaveta para o carvão, espaço para espetos e grelha horizontal.
+          Quanto mais robusta, melhor. Algumas chegam a ter fornos e fogões embutidos. É o coração da área de lazer do brasileiro.
+        </p>
+        <p>
+          Também temos as churrasqueiras de aço inox (portáteis ou fixas), as de barranco (fogo de chão com espeto cruzado) e as de tambor (o famoso "bafo de onça").
+          Cada uma com seu charme e sua utilidade.
+        </p>
+
+        <h3>A parrilla argentina</h3>
+        <p>
+          A parrilla é uma <strong>grelha inclinada com sistema de regulagem de altura</strong>. O fogo fica de um lado (a "V" de brasa) e a grelha fica posicionada em ângulo para receber o calor de forma indireta.
+          Esse sistema permite controlar o calor com muita precisão — subindo ou descendo a grelha conforme necessário.
+        </p>
+        <p>
+          Muitos argentinos também usam o <strong>"asado al palo"</strong> — a carne inteira (um cordeiro ou um leitão) empalada em uma cruz de ferro e assada de pé, ao lado do fogo, por horas. É um espetáculo à parte.
+        </p>
+
+        <div class="fire-divider">🔥 🥩 🔥</div>
+
+        <!-- CONCLUSÃO -->
+        <h2>🏁 E no final, quem ganha?</h2>
+
+        <p>
+          Essa é a resposta que todo mundo quer e ninguém vai ouvir: <strong>não existe vencedor.</strong>
+          São duas tradições riquíssimas, cada uma com sua identidade, sua história e seu sabor único.
+        </p>
+        <p>
+          O que eu posso te dizer, depois de mais de 7 anos de churrasco e mais de 380 eventos realizados no Rio de Janeiro,
+          é que o segredo não está em qual estilo você escolhe — está em <strong>respeitar a carne, dominar o fogo e servir com amor.</strong>
+        </p>
+        <p>
+          No Templo do Churrasco, a gente combina o melhor dos dois mundos: a tradição brasileira da brasa viva, o respeito ao corte e ao ponto certo,
+          e a paciência da parrilla quando o corte pede. O resultado é uma experiência única que os convidados não esquecem.
+        </p>
+
+        <blockquote>
+          <strong>"Seja churrasco ou parrilla, o que faz o fogo valer a pena é a gente em volta dele."</strong><br>
+          — Guilherme Santos 🔥
+        </blockquote>
+
+      </article>
+
+      <!-- TAGS -->
+      <div style="margin-top: 2rem;">
+        <strong style="font-size: 0.875rem; color: var(--color-gray-600); margin-right: 0.5rem;">Tags:</strong>
+        <a href="#" class="tag">Churrasco</a>
+        <a href="#" class="tag">Parrilla Argentina</a>
+        <a href="#" class="tag">Curiosidades</a>
+        <a href="#" class="tag">Técnicas de Churrasco</a>
+        <a href="#" class="tag">Cortes de Carne</a>
+        <a href="#" class="tag">Chimichurri</a>
+        <a href="#" class="tag">Método Brasa Viva</a>
+        <a href="#" class="tag">Dicas do Guilherme</a>
+      </div>
+
+      <!-- COMPARTILHAR -->
+      <div class="share-buttons">
+        <span class="share-label">Compartilhe:</span>
+        <a href="https://wa.me/?text=Churrasco+Brasileiro+x+Parrilla+Argentina+-+leia+no+blog+do+Templo+do+Churrasco!" target="_blank" class="share-btn whatsapp">
+          📱 WhatsApp
+        </a>
+        <button class="share-btn share-btn-copy" onclick="alert('Link copiado! 🔥')">
+          🔗 Copiar link
+        </button>
+      </div>
+
+      <!-- AUTOR -->
+      <div class="author-box">
+        <div class="author-avatar">👨‍🍳</div>
+        <div class="author-info">
+          <div class="author-name">Guilherme Santos</div>
+          <div class="author-role">🔥 Churrasqueiro Gourmet — Templo do Churrasco</div>
+          <p class="author-bio">
+            Churrasqueiro profissional com mais de 7 anos de experiência e 380+ eventos realizados no Rio de Janeiro.
+            Criador do Método Brasa Viva — a técnica que garante churrascos perfeitos em cada evento.
+            Apaixonado pelo fogo, pela carne e por criar experiências inesquecíveis para as famílias cariocas.
+          </p>
+          <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Li+seu+artigo+e+quero+saber+mais+sobre+o+Templo+do+Churrasco!"
+             class="btn btn-whatsapp btn-sm" target="_blank" style="margin-top: 1rem; display: inline-flex;">
+            Falar com o Guilherme
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="post-cta">
+  <div class="container">
+    <h2>Gostou das dicas? Que tal contratar o churrasco perfeito? 🔥</h2>
+    <p>Aplico tudo isso e muito mais no seu evento. Me chama no WhatsApp!</p>
+    <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Li+o+artigo+sobre+Churrasco+e+Parrilla+e+quero+saber+sobre+os+serviços+do+Templo+do+Churrasco!"
+       class="btn btn-whatsapp btn-lg" target="_blank">
+      📱 Falar com Guilherme no WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+solicitar+um+orçamento" class="whatsapp-float" target="_blank">📱</a>
+
+</body>
+</html>

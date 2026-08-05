@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Templo do Churrasco — Prévia do Site</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-primary: #C0392B;
+  --color-primary-dark: #962d22;
+  --color-primary-light: #e74c3c;
+  --color-secondary: #E67E22;
+  --color-dark: #1A1A1A;
+  --color-darker: #0d0d0d;
+  --color-gold: #F39C12;
+  --color-gold-light: #f1c40f;
+  --color-bg-light: #FFF8F0;
+  --color-white: #ffffff;
+  --color-gray-600: #6c757d;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1ebe57;
+  --font-heading: 'Montserrat', Arial, sans-serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: #343a40; background: #fff; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; }
+ul { list-style: none; }
+h1,h2,h3,h4 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.section { padding: 5rem 0; }
+
+/* TOPBAR */
+.topbar { background: var(--color-dark); color: rgba(255,255,255,0.85); padding: 0.5rem 0; font-size: 0.875rem; border-bottom: 1px solid rgba(192,57,43,0.3); }
+.topbar .container { display: flex; align-items: center; justify-content: space-between; }
+.topbar-left { display: flex; gap: 1rem; }
+.topbar-item { color: rgba(255,255,255,0.75); }
+.topbar-whatsapp { color: var(--color-whatsapp) !important; font-weight: 600; }
+
+/* HEADER */
+.site-header { background: rgba(26,26,26,0.97); border-bottom: 2px solid var(--color-primary); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 75px; }
+.site-logo { display: flex; align-items: center; gap: 0.75rem; }
+.logo-icon { font-size: 2rem; filter: drop-shadow(0 0 8px rgba(230,126,34,0.8)); }
+.logo-text-main { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: -0.02em; }
+.logo-text-main span { color: var(--color-secondary); }
+.logo-text-sub { font-size: 0.75rem; color: #adb5bd; letter-spacing: 0.1em; text-transform: uppercase; }
+.main-nav { display: flex; gap: 0; }
+.main-nav a { display: block; padding: 0.75rem 1rem; font-family: var(--font-heading); font-size: 0.875rem; font-weight: 600; color: rgba(255,255,255,0.85); letter-spacing: 0.03em; text-transform: uppercase; transition: color 0.3s; }
+.main-nav a:hover { color: var(--color-secondary); }
+.btn-nav { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff !important; border-radius: 999px; padding: 0.5rem 1.25rem !important; font-size: 0.8rem !important; margin-left: 0.5rem; }
+
+/* BUTTONS */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; font-family: var(--font-heading); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 999px; cursor: pointer; transition: all 0.3s; text-decoration: none; line-height: 1; white-space: nowrap; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff; box-shadow: 0 4px 20px rgba(192,57,43,0.4); }
+.btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; }
+.btn-secondary:hover { background: #fff; color: var(--color-dark); }
+.btn-whatsapp { background: linear-gradient(135deg, var(--color-whatsapp), var(--color-whatsapp-dark)); color: #fff; box-shadow: 0 4px 20px rgba(37,211,102,0.4); padding: 1.25rem 2.5rem; font-size: 1rem; }
+.btn-gold { background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light)); color: var(--color-dark); box-shadow: 0 4px 20px rgba(243,156,18,0.4); }
+.btn-outline-primary { background: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); }
+.btn-outline-primary:hover { background: var(--color-primary); color: #fff; }
+.btn-lg { padding: 1.25rem 3rem; font-size: 1rem; }
+
+/* HERO */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: var(--color-darker); overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(192,57,43,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(230,126,34,0.1) 0%, transparent 50%), linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%); }
+.hero-overlay { position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C0392B' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.hero .container { position: relative; z-index: 1; }
+.hero-content { max-width: 750px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(192,57,43,0.15); border: 1px solid rgba(192,57,43,0.4); color: var(--color-secondary); font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 999px; margin-bottom: 1.5rem; }
+.hero-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #fff; margin-bottom: 1.5rem; line-height: 1.05; letter-spacing: -0.02em; }
+.highlight { color: var(--color-secondary); position: relative; }
+.hero-subtitle { font-size: 1.125rem; color: rgba(255,255,255,0.75); margin-bottom: 2.5rem; max-width: 580px; line-height: 1.7; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.hero-social-proof { display: flex; align-items: center; gap: 2rem; }
+.hero-proof-item { display: flex; flex-direction: column; }
+.hero-proof-number { font-family: var(--font-heading); font-size: 1.875rem; font-weight: 900; color: var(--color-secondary); }
+.hero-proof-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
+.hero-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); }
+
+/* STATS */
+.stats-section { background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); padding: 4rem 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
+.stat-item { color: #fff; }
+.stat-icon { font-size: 2.5rem; display: block; margin-bottom: 0.75rem; }
+.stat-number { font-family: var(--font-heading); font-size: 3rem; font-weight: 900; line-height: 1; }
+.stat-label { font-family: var(--font-heading); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem; }
+.stat-sublabel { font-size: 0.75rem; opacity: 0.75; margin-top: 0.25rem; }
+
+/* SECTION HEADERS */
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-label { display: inline-block; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-secondary); background: rgba(230,126,34,0.1); border: 1px solid rgba(230,126,34,0.3); padding: 0.25rem 1rem; border-radius: 999px; margin-bottom: 1rem; }
+.section-label.light { color: var(--color-gold); background: rgba(243,156,18,0.15); border-color: rgba(243,156,18,0.4); }
+.section-title { font-size: 2.25rem; font-weight: 800; color: var(--color-dark); margin-bottom: 1rem; }
+.section-title.light { color: #fff; }
+.section-subtitle { font-size: 1.125rem; color: var(--color-gray-600); max-width: 600px; margin: 0 auto; }
+.section-subtitle.light { color: rgba(255,255,255,0.8); }
+.title-underline { position: relative; display: inline-block; }
+.title-underline::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); border-radius: 999px; }
+
+/* ABOUT */
+.about-section { background: var(--color-bg-light); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-image-placeholder { background: linear-gradient(135deg, #2a2a2a, #1a1a1a); border-radius: 20px; aspect-ratio: 4/5; display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); gap: 1rem; font-size: 0.875rem; position: relative; }
+.placeholder-icon { font-size: 4rem; }
+.about-badge { position: absolute; bottom: -20px; right: -20px; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff; border-radius: 50%; width: 100px; height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: var(--font-heading); box-shadow: 0 10px 30px rgba(192,57,43,0.4); }
+.about-badge-number { font-size: 1.75rem; font-weight: 900; line-height: 1; }
+.about-badge-text { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-align: center; }
+.about-image-wrapper { position: relative; padding-bottom: 20px; }
+.section-label-left { display: inline-block; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-secondary); background: rgba(230,126,34,0.1); border: 1px solid rgba(230,126,34,0.3); padding: 0.25rem 1rem; border-radius: 999px; margin-bottom: 1rem; }
+.about-title { font-size: 2rem; font-weight: 800; color: var(--color-dark); margin-bottom: 1.5rem; line-height: 1.15; }
+.name-highlight { color: var(--color-primary); }
+.about-text { color: #495057; margin-bottom: 1rem; line-height: 1.8; }
+.method-steps { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; }
+.method-step { display: flex; gap: 1rem; align-items: flex-start; }
+.method-step-number { width: 36px; height: 36px; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; font-size: 0.875rem; flex-shrink: 0; }
+.method-step-content h4 { font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 0.25rem; }
+.method-step-content p { font-size: 0.85rem; color: #6c757d; margin: 0; }
+
+/* SERVICES */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.service-card { background: #fff; border-radius: 20px; padding: 2rem; border: 1px solid #e9ecef; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: all 0.3s; display: flex; flex-direction: column; gap: 1rem; }
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+.service-card.featured { background: linear-gradient(135deg, var(--color-dark) 0%, #2a2a2a 100%); border-color: var(--color-gold); box-shadow: 0 10px 40px rgba(243,156,18,0.2); }
+.service-card.featured .service-card-title { color: #fff; }
+.service-card.featured .service-card-description { color: rgba(255,255,255,0.75); }
+.service-card.featured .service-card-feature { color: rgba(255,255,255,0.85); }
+.service-card.featured .service-card-feature::before { color: var(--color-gold); }
+.service-badge { background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light)); color: var(--color-dark); font-family: var(--font-heading); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.75rem; border-radius: 999px; display: inline-block; margin-bottom: 0.5rem; }
+.service-card-icon { font-size: 2.5rem; }
+.service-card-title { font-size: 1.25rem; font-weight: 800; color: var(--color-dark); }
+.service-card-price { font-family: var(--font-heading); font-size: 2rem; font-weight: 900; color: var(--color-primary); line-height: 1.1; }
+.service-card-price .price-period { font-size: 0.875rem; font-weight: 600; color: #6c757d; }
+.service-card.featured .service-card-price { color: var(--color-gold); }
+.service-card-description { font-size: 0.875rem; color: #6c757d; line-height: 1.7; }
+.service-features { display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.service-card-feature { font-size: 0.85rem; color: #495057; padding-left: 1.25rem; position: relative; }
+.service-card-feature::before { content: '✓'; position: absolute; left: 0; color: var(--color-primary); font-weight: 700; }
+.mt-auto { margin-top: auto; }
+
+/* HOW IT WORKS */
+.steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
+.step-icon-wrapper { position: relative; display: inline-block; margin-bottom: 1rem; }
+.step-icon-wrapper span { font-size: 3rem; }
+.step-number { position: absolute; bottom: -8px; right: -8px; width: 28px; height: 28px; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff; border-radius: 50%; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.step-title { font-size: 1rem; font-weight: 700; color: var(--color-dark); margin-bottom: 0.75rem; }
+.step-text { font-size: 0.875rem; color: #6c757d; line-height: 1.6; }
+
+/* TESTIMONIALS */
+.testimonials-section { background: linear-gradient(135deg, var(--color-dark) 0%, #2a1a0a 100%); position: relative; overflow: hidden; }
+.testimonials-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 1.5rem; align-items: start; }
+.testimonial-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; position: relative; }
+.testimonial-card.featured-testimonial { background: rgba(192,57,43,0.15); border-color: rgba(192,57,43,0.4); }
+.testimonial-quote-icon { position: absolute; top: 1rem; right: 1.5rem; font-size: 4rem; color: var(--color-primary); opacity: 0.3; font-family: Georgia, serif; line-height: 1; }
+.testimonial-stars { color: var(--color-gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 1rem; }
+.testimonial-text { font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.8; font-style: italic; margin-bottom: 1.5rem; }
+.testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+.testimonial-avatar { width: 44px; height: 44px; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; color: #fff; font-size: 1.1rem; flex-shrink: 0; }
+.testimonial-name { font-family: var(--font-heading); font-weight: 700; color: #fff; font-size: 0.9rem; }
+.testimonial-role { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-top: 0.1rem; }
+
+/* CTA */
+.cta-section { background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); padding: 5rem 0; text-align: center; position: relative; overflow: hidden; }
+.cta-title { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: 1rem; }
+.cta-subtitle { font-size: 1.125rem; color: rgba(255,255,255,0.85); margin-bottom: 2.5rem; max-width: 550px; margin-left: auto; margin-right: auto; margin-bottom: 2.5rem; }
+.cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* FOOTER */
+.site-footer { background: var(--color-darker); color: rgba(255,255,255,0.75); padding: 4rem 0 2rem; border-top: 2px solid var(--color-primary); }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand .logo-text-main { font-size: 1.1rem; }
+.footer-desc { font-size: 0.875rem; color: rgba(255,255,255,0.55); margin: 1rem 0 1.5rem; line-height: 1.7; }
+.footer-contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; margin-bottom: 0.5rem; color: rgba(255,255,255,0.7); }
+.footer-contact-item strong { color: var(--color-secondary); }
+.footer-col-title { font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: 1.25rem; }
+.footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-links a { font-size: 0.875rem; color: rgba(255,255,255,0.65); transition: color 0.3s; }
+.footer-links a:hover { color: var(--color-secondary); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; }
+.footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+.footer-fire { font-size: 1.25rem; }
+
+/* PREVIA BADGE */
+.previa-badge { position: fixed; top: 1rem; right: 1rem; background: rgba(192,57,43,0.9); color: #fff; font-family: var(--font-heading); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem 1rem; border-radius: 999px; z-index: 9999; backdrop-filter: blur(4px); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+
+@media (max-width: 768px) {
+  .stats-grid, .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .about-grid, .footer-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 2.2rem; }
+  .main-nav { display: none; }
+  .hero-social-proof { gap: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="previa-badge">🔥 Prévia — Tema WordPress</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">📍 Rio de Janeiro, RJ</span>
+      <span class="topbar-item">⭐ 380+ eventos realizados</span>
+    </div>
+    <div>
+      <a href="https://wa.me/5521998594584" class="topbar-whatsapp">
+        📱 (21) 99859-4584
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="site-logo">
+        <span class="logo-icon">🔥</span>
+        <div class="logo-text">
+          <span class="logo-text-main">Templo do <span>Churrasco</span></span>
+          <span class="logo-text-sub">Churrasqueiro Gourmet · Rio de Janeiro</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5521998594584" class="btn-nav" target="_blank">Orçamento</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>🔥</span>
+        Método Brasa Viva — Rio de Janeiro desde 2018
+      </div>
+      <h1 class="hero-title">
+        Churrasco que faz todo<br>
+        mundo <span class="highlight">pedir bis</span> 🔥
+      </h1>
+      <p class="hero-subtitle">
+        Churrasco gourmet feito na brasa, com carnes nobres selecionadas, buffet completo e atendimento personalizado. Você curte, eu cuido de tudo.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Gostaria+de+solicitar+um+orçamento+para+meu+churrasco.+🔥" class="btn btn-whatsapp btn-lg" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Orçamento
+        </a>
+        <a href="#servicos" class="btn btn-secondary btn-lg">Ver Serviços</a>
+      </div>
+      <div class="hero-social-proof">
+        <div class="hero-proof-item">
+          <span class="hero-proof-number">380+</span>
+          <span class="hero-proof-label">Eventos realizados</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-proof-item">
+          <span class="hero-proof-number">7+</span>
+          <span class="hero-proof-label">Anos de experiência</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-proof-item">
+          <span class="hero-proof-number">100%</span>
+          <span class="hero-proof-label">Recomendação</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-icon">🏆</span>
+        <div class="stat-number">380+</div>
+        <div class="stat-label">Eventos Realizados</div>
+        <div class="stat-sublabel">em todo o Rio de Janeiro</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🔥</span>
+        <div class="stat-number">7+</div>
+        <div class="stat-label">Anos de Experiência</div>
+        <div class="stat-sublabel">desde 2018</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">⭐</span>
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Recomendação</div>
+        <div class="stat-sublabel">zero reclamações</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🥩</span>
+        <div class="stat-number">12</div>
+        <div class="stat-label">Cortes no Pacote Deluxe</div>
+        <div class="stat-sublabel">carnes nobres selecionadas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about-section section" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrapper">
+        <div class="about-image-placeholder">
+          <span class="placeholder-icon">👨‍🍳</span>
+          <span>Foto do Guilherme Santos</span>
+          <small style="font-size:0.75rem;opacity:0.5;margin-top:0.5rem">Adicione sua foto via Customizer</small>
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-number">7+</span>
+          <span class="about-badge-text">Anos na Brasa</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-label-left">Quem é o Guilherme?</span>
+        <h2 class="about-title">
+          <span class="name-highlight">Guilherme Santos</span><br>
+          Churrasqueiro Gourmet<br>no Rio de Janeiro
+        </h2>
+        <p class="about-text">Desde 2018, o Guilherme transformou a paixão pelo fogo em experiências inesquecíveis para famílias e grupos em todo o Rio de Janeiro. Com mais de 380 eventos realizados e zero reclamações, o método é simples: só serve quando está perfeito.</p>
+        <p class="about-text">O diferencial está no <strong>Método Brasa Viva</strong> — uma abordagem única que garante carnes no ponto certo, do início ao fim do evento.</p>
+        <div class="method-steps">
+          <div class="method-step">
+            <div class="method-step-number">1</div>
+            <div class="method-step-content">
+              <h4>Seleção das Carnes</h4>
+              <p>Escolho pessoalmente os melhores cortes: picanha, alcatra, maminha, costela e mais.</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <div class="method-step-number">2</div>
+            <div class="method-step-content">
+              <h4>Tempero 24h Antes</h4>
+              <p>Cada corte recebe o tempero ideal com 24 horas de antecedência para absorção perfeita.</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <div class="method-step-number">3</div>
+            <div class="method-step-content">
+              <h4>Controle Individual de Ponto</h4>
+              <p>Monitoro cada corte individualmente. Sem pressa, sem queimar, sem deixar mal passado.</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <div class="method-step-number">4</div>
+            <div class="method-step-content">
+              <h4>Só Serve Quando Está Perfeito</h4>
+              <p>A carne só vai pra mesa quando eu tenho certeza que vai impressionar. Ponto final.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-outline-primary">Conheça minha história</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">O que eu ofereço</span>
+      <h2 class="section-title title-underline">Escolha o Pacote Ideal para o Seu Evento</h2>
+      <p class="section-subtitle">Do churrasqueiro avulso ao churrasco gourmet completo — tenho a solução certa para o seu evento.</p>
+    </div>
+    <div class="grid-3">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <span class="service-card-icon">👨‍🍳</span>
+        <h3 class="service-card-title">Churrasqueiro Avulso</h3>
+        <div class="service-card-price">A partir de <br>R$ 300<span class="price-period">/evento</span></div>
+        <p class="service-card-description">Precisa de um churrasqueiro profissional? Eu vou até você, cuido de toda a grelha e deixo as carnes perfeitas enquanto você curte a festa.</p>
+        <ul class="service-features">
+          <li class="service-card-feature">Churrasqueiro profissional presente</li>
+          <li class="service-card-feature">Manejo e controle da grelha</li>
+          <li class="service-card-feature">Carnes assadas na hora</li>
+          <li class="service-card-feature">Você fornece as carnes e equipamentos</li>
+          <li class="service-card-feature">Consulta prévia ao cardápio</li>
+        </ul>
+        <div class="mt-auto">
+          <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Tenho+interesse+no+serviço+de+Churrasqueiro+Avulso." class="btn btn-outline-primary" target="_blank" style="width:100%">Solicitar Orçamento</a>
+        </div>
+      </div>
+      <!-- Card 2 — DESTAQUE -->
+      <div class="service-card featured">
+        <span class="service-badge">MAIS POPULAR</span>
+        <span class="service-card-icon">🥩</span>
+        <h3 class="service-card-title">Churrasco Gourmet</h3>
+        <div class="service-card-price" style="color:var(--color-gold)">Sob Consulta</div>
+        <p class="service-card-description">Serviço completo e premium. Carnes nobres selecionadas, buffet de guarnições, garçons, equipamentos — tudo incluso. Você só precisa aparecer e aproveitar.</p>
+        <ul class="service-features">
+          <li class="service-card-feature">Picanha, alcatra, maminha e mais</li>
+          <li class="service-card-feature">Buffet: arroz, feijão, farofa, saladas</li>
+          <li class="service-card-feature">Pão de queijo e molhos especiais</li>
+          <li class="service-card-feature">Garçons e atendimento completo</li>
+          <li class="service-card-feature">Equipamentos e estrutura inclusos</li>
+          <li class="service-card-feature">Tempero Método Brasa Viva</li>
+        </ul>
+        <div class="mt-auto">
+          <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+saber+mais+sobre+o+Churrasco+Gourmet." class="btn btn-gold" target="_blank" style="width:100%">Solicitar Orçamento</a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="service-card">
+        <span class="service-card-icon">👑</span>
+        <h3 class="service-card-title">Pacote Deluxe</h3>
+        <div class="service-card-price">R$ 105<span class="price-period">/pessoa</span></div>
+        <p class="service-card-description">A experiência definitiva de churrasco. Doze cortes diferentes, buffet completo de guarnições e sobremesas. Para quem quer impressionar de verdade.</p>
+        <ul class="service-features">
+          <li class="service-card-feature">12 cortes de carne nobres</li>
+          <li class="service-card-feature">Buffet completo de guarnições</li>
+          <li class="service-card-feature">Sobremesas incluídas</li>
+          <li class="service-card-feature">Garçons e serviço premium</li>
+          <li class="service-card-feature">Equipamentos e estrutura</li>
+          <li class="service-card-feature">Atendimento personalizado</li>
+        </ul>
+        <div class="mt-auto">
+          <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Tenho+interesse+no+Pacote+Deluxe+com+12+carnes." class="btn btn-primary" target="_blank" style="width:100%">Solicitar Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section" style="background:var(--color-bg-light)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Processo simples</span>
+      <h2 class="section-title title-underline">Como Funciona?</h2>
+      <p class="section-subtitle">Do seu contato até o último pedaço de carne servido, cuido de tudo com dedicação e profissionalismo.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-icon-wrapper"><span>📱</span><div class="step-number">1</div></div>
+        <h3 class="step-title">Você Solicita</h3>
+        <p class="step-text">Me manda uma mensagem no WhatsApp com a data, número de convidados e o tipo de evento. Respondo rápido!</p>
+      </div>
+      <div class="step-item">
+        <div class="step-icon-wrapper"><span>📋</span><div class="step-number">2</div></div>
+        <h3 class="step-title">Planejamos Juntos</h3>
+        <p class="step-text">Montamos o cardápio ideal, definimos o pacote e tiramos todas as dúvidas. O churrasco é personalizado pro seu evento.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-icon-wrapper"><span>🔥</span><div class="step-number">3</div></div>
+        <h3 class="step-title">Eu Preparo</h3>
+        <p class="step-text">Seleciono as carnes, tempero 24h antes, chego no horário e cuido de cada detalhe. Método Brasa Viva em ação.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-icon-wrapper"><span>🥂</span><div class="step-number">4</div></div>
+        <h3 class="step-title">Você Curte</h3>
+        <p class="step-text">Você aproveita o evento, recebe os elogios e colhe as memórias. Cuido de tudo, do início ao fim. Simples assim!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testimonials-section section" id="depoimentos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label light">O que dizem os clientes</span>
+      <h2 class="section-title title-underline light">Quem Provou, Aprovou! 🔥</h2>
+      <p class="section-subtitle light">100% dos clientes recomendam. Essas são só algumas das histórias de churrascos inesquecíveis.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card featured-testimonial">
+        <span class="testimonial-quote-icon">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote class="testimonial-text">"O Guilherme salvou meu aniversário de 50 anos! As carnes estavam perfeitas e eu pude curtir a festa sem me preocupar com nada. Todo mundo pediu o contato dele na hora!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Maria de Lurdes</div>
+            <div class="testimonial-role">52 anos — Aniversário de 50 anos, Rio de Janeiro</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-quote-icon">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote class="testimonial-text">"Contratei o Guilherme para o aniversário do meu marido e foi perfeito. A picanha era de outro mundo! Já agendei para o próximo ano. Vale cada centavo."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">C</div>
+          <div>
+            <div class="testimonial-name">Carla Mendes</div>
+            <div class="testimonial-role">45 anos — Aniversário em família, Barra da Tijuca</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-quote-icon">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote class="testimonial-text">"Fizemos o evento corporativo da nossa empresa com o Guilherme. Todos os 80 convidados elogiaram. Profissionalismo total do início ao fim. Recomendo sem hesitar!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Roberto Faria</div>
+            <div class="testimonial-role">Diretor Comercial — Evento Corporativo, Niterói</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section" id="contato">
+  <div class="container">
+    <h2 class="cta-title">Pronto para o Churrasco Perfeito? 🔥</h2>
+    <p class="cta-subtitle">Me chama no WhatsApp agora e garanta a data do seu evento. Respondo rápido!</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/5521998594584?text=Olá+Guilherme!+Quero+fazer+um+churrasco+perfeito.+Me+conta+mais!" class="btn btn-whatsapp btn-lg" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp Agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="site-logo" style="margin-bottom:1rem">
+          <span class="logo-icon">🔥</span>
+          <div class="logo-text">
+            <span class="logo-text-main">Templo do <span>Churrasco</span></span>
+            <span class="logo-text-sub">Churrasqueiro Gourmet</span>
+          </div>
+        </div>
+        <p class="footer-desc">Churrasco gourmet feito na brasa, com carnes nobres selecionadas e atendimento personalizado. Rio de Janeiro desde 2018.</p>
+        <div class="footer-contact-item"><strong>📍</strong> Rio de Janeiro, RJ</div>
+        <div class="footer-contact-item"><strong>📱</strong> (21) 99859-4584</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Serviços</div>
+        <div class="footer-links">
+          <a href="#">Churrasqueiro Avulso</a>
+          <a href="#">Churrasco Gourmet</a>
+          <a href="#">Pacote Deluxe</a>
+          <a href="#">Calculadora de Churrasco</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <div class="footer-links">
+          <a href="#">Sobre o Guilherme</a>
+          <a href="#">Galeria de Fotos</a>
+          <a href="#">Blog de Dicas</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Templo do Churrasco · Todos os direitos reservados · Guilherme Santos</p>
+      <span class="footer-fire">🔥</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

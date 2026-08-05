@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WordPress eXtended RSS — Templo do Churrasco -->
+<!-- Importar via: WordPress Admin > Ferramentas > Importar > WordPress -->
+<rss version="2.0"
+     xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Templo do Churrasco</title>
+    <link>https://templodochurrasco.com.br</link>
+    <description>Churrasqueiro Gourmet no Rio de Janeiro — Guilherme Santos</description>
+    <pubDate>Sat, 21 Mar 2026 12:00:00 +0000</pubDate>
+    <language>pt-BR</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://templodochurrasco.com.br</wp:base_site_url>
+    <wp:base_blog_url>https://templodochurrasco.com.br</wp:base_blog_url>
+
+    <!-- Autor -->
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[guilherme]]></wp:author_login>
+        <wp:author_email><![CDATA[contato@templodochurrasco.com.br]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Guilherme Santos]]></wp:author_display_name>
+        <wp:author_first_name><![CDATA[Guilherme]]></wp:author_first_name>
+        <wp:author_last_name><![CDATA[Santos]]></wp:author_last_name>
+    </wp:author>
+
+    <!-- Categorias -->
+    <wp:category>
+        <wp:term_id>1</wp:term_id>
+        <wp:category_nicename><![CDATA[dicas-de-churrasco]]></wp:category_nicename>
+        <wp:category_parent></wp:category_parent>
+        <wp:cat_name><![CDATA[Dicas de Churrasco]]></wp:cat_name>
+        <wp:category_description><![CDATA[Dicas práticas para você fazer o melhor churrasco da sua vida!]]></wp:category_description>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>2</wp:term_id>
+        <wp:category_nicename><![CDATA[tecnicas]]></wp:category_nicename>
+        <wp:category_parent></wp:category_parent>
+        <wp:cat_name><![CDATA[Técnicas]]></wp:cat_name>
+        <wp:category_description><![CDATA[Técnicas profissionais de churrasco do Guilherme Santos]]></wp:category_description>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>3</wp:term_id>
+        <wp:category_nicename><![CDATA[metodo-brasa-viva]]></wp:category_nicename>
+        <wp:category_parent></wp:category_parent>
+        <wp:cat_name><![CDATA[Método Brasa Viva]]></wp:cat_name>
+        <wp:category_description><![CDATA[Conteúdo sobre o Método Brasa Viva do Templo do Churrasco]]></wp:category_description>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>4</wp:term_id>
+        <wp:category_nicename><![CDATA[churrasqueiro-profissional]]></wp:category_nicename>
+        <wp:category_parent></wp:category_parent>
+        <wp:cat_name><![CDATA[Churrasqueiro Profissional]]></wp:cat_name>
+    </wp:category>
+
+    <!-- ============================================================
+         POST 1 — Como salgar a picanha
+         ============================================================ -->
+    <item>
+        <title>Como salgar a picanha para um churrasco perfeito — Guia Completo</title>
+        <link>https://templodochurrasco.com.br/como-salgar-picanha-churrasco-perfeito</link>
+        <pubDate>Mon, 09 Mar 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[guilherme]]></dc:creator>
+        <category domain="category" nicename="dicas-de-churrasco"><![CDATA[Dicas de Churrasco]]></category>
+        <category domain="category" nicename="tecnicas"><![CDATA[Técnicas]]></category>
+        <category domain="post_tag" nicename="picanha"><![CDATA[picanha]]></category>
+        <category domain="post_tag" nicename="sal-grosso"><![CDATA[sal grosso]]></category>
+        <category domain="post_tag" nicename="churrasco-perfeito"><![CDATA[churrasco perfeito]]></category>
+        <category domain="post_tag" nicename="como-salgar"><![CDATA[como salgar]]></category>
+        <wp:post_date><![CDATA[2026-03-09 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_name><![CDATA[como-salgar-picanha-churrasco-perfeito]]></wp:post_name>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <excerpt:encoded><![CDATA[Aprenda a técnica certa para salgar a picanha e garantir um churrasco perfeito. O Guilherme Santos, churrasqueiro gourmet do Rio de Janeiro, revela os segredos do Método Brasa Viva.]]></excerpt:encoded>
+        <content:encoded><![CDATA[
+<p>A picanha é a rainha do churrasco brasileiro, e o sal grosso é o segredo que separa uma carne mediana de uma experiência inesquecível. Depois de mais de 7 anos e 380+ eventos realizados no Rio de Janeiro, posso afirmar com certeza: a forma como você sala a picanha define tudo.</p>
+
+<h2>Por que o sal grosso e não o sal fino?</h2>
+
+<p>Essa é uma das perguntas mais frequentes que recebo dos meus clientes. A resposta é simples: o sal fino penetra rapidamente na carne e pode "cozinhar" as fibras antes mesmo de ir para a grelha, deixando a carne ressecada e sem aquela textura macia e suculenta que todo mundo ama.</p>
+
+<p>O sal grosso age de forma diferente: ele dissolve-se lentamente com o calor da brasa, criando uma crosta externa que sela os sucos da carne por dentro. Resultado? Uma picanha com exterior levemente crocante e interior suculento, no ponto perfeito.</p>
+
+<h2>O momento certo de salgar — O segredo do Método Brasa Viva</h2>
+
+<p>No Método Brasa Viva, trabalho com dois tempos de salga dependendo do corte e do evento:</p>
+
+<h3>Técnica 1: Salga na hora (para eventos rápidos)</h3>
+
+<p>Para eventos de menor duração ou quando a picanha vai direto para a grelha, aplique o sal grosso generosamente de ambos os lados exatamente 15 minutos antes de colocar na brasa. Esse tempo é suficiente para o sal começar a "conversar" com a superfície da carne sem penetrar demais.</p>
+
+<h3>Técnica 2: Salga 24 horas antes (o segredo do churrasco gourmet)</h3>
+
+<p>Para eventos especiais e para o Pacote Deluxe do Templo do Churrasco, prefiro fazer a salga com 24 horas de antecedência com uma mistura especial. Nesse caso, uso uma combinação de sal grosso moído na hora com especiarias selecionadas, cubro a carne e deixo descansar na geladeira.</p>
+
+<p>Esse processo permite que o sal penetre uniformemente e que as especiarias criem uma camada de sabor complexa que você só vai encontrar em churrascos gourmet de verdade.</p>
+
+<h2>Passo a passo para salgar a picanha em casa</h2>
+
+<p><strong>O que você vai precisar:</strong></p>
+<ul>
+    <li>1 peça de picanha (de preferência com capa de gordura de 1-2cm)</li>
+    <li>Sal grosso de boa qualidade</li>
+    <li>Uma forma ou tábua grande</li>
+</ul>
+
+<p><strong>Passo 1: Escolha a peça certa</strong></p>
+<p>Antes de pensar no sal, você precisa de uma boa picanha. Procure peças com capa de gordura uniforme, cor vermelho-rubi brilhante e textura firme. Picanhas com gordura amarelada ou muito mole indicam animal mais velho, o que vai resultar em carne mais dura.</p>
+
+<p><strong>Passo 2: Temperatura certa</strong></p>
+<p>Retire a picanha da geladeira pelo menos 30 minutos antes de salgar. Carne muito fria absorve o sal de forma irregular e vai demorar mais para assar uniformemente na brasa.</p>
+
+<p><strong>Passo 3: Aplicação do sal</strong></p>
+<p>Deite a picanha com a gordura para cima. Pegue o sal grosso e espalhe generosamente sobre toda a superfície da carne, incluindo as laterais. Não tenha medo: parte do sal vai cair durante o preparo — isso é normal. O que importa é que a superfície fique coberta.</p>
+
+<p><strong>Passo 4: A gordura tem segredo</strong></p>
+<p>No lado da gordura, aplique uma quantidade menor de sal e com movimentos suaves. A gordura absorve mais facilmente do que o músculo, e excesso de sal aqui pode deixar a carne amarga.</p>
+
+<p><strong>Passo 5: Aguarde e vá para a brasa</strong></p>
+<p>Após 15 minutos, leve para a grelha com a gordura virada para cima. O calor vai derreter a gordura e regar a carne naturalmente durante o cozimento.</p>
+
+<h2>O erro mais comum (e como evitar)</h2>
+
+<p>O maior erro que vejo nos churrascos amadores é salgar e colocar imediatamente na grelha quente demais. O calor excessivo no início sela a superfície antes do sal agir, resultando em uma carne seca por dentro.</p>
+
+<p>A brasa ideal para a picanha é média-alta. Se você colocar a mão a 15cm da grelha, ela deve aguentar por 3-4 segundos. Mais que isso, a brasa está fraca. Menos que isso, está forte demais.</p>
+
+<h2>Ponto da picanha — A arte do churrasqueiro gourmet</h2>
+
+<p>O ponto da picanha é pessoal e deve ser respeitado. No Templo do Churrasco, sempre pergunto a preferência de cada cliente antes do evento:</p>
+
+<ul>
+    <li><strong>Ao ponto (o preferido):</strong> Centro rosado, exterior com crosta dourada. Cerca de 8-10 minutos de cada lado dependendo da espessura.</li>
+    <li><strong>Mal passado:</strong> Centro vermelho vivo, exterior sellado. 5-7 minutos de cada lado.</li>
+    <li><strong>Bem passado:</strong> Homogêneo ao longo da peça. 12-15 minutos de cada lado com fogo mais baixo para não queimar.</li>
+</ul>
+
+<h2>Conclusão: a picanha perfeita está nos detalhes</h2>
+
+<p>Depois de 380+ eventos e incontáveis picanhas assadas na brasa, aprendi que o segredo não está em nenhuma técnica mirabolante. Está no respeito à carne, no sal na quantidade certa, na brasa controlada e no tempo de descanso após sair da grelha (sempre! Deixe descansar 3-5 minutos antes de fatiar).</p>
+
+<p>Se quiser ver essa técnica em prática no seu evento, é só me chamar no WhatsApp! Com o Método Brasa Viva, cada picanha sai no ponto certo, toda vez.</p>
+
+<p><strong>Guilherme Santos</strong><br>
+Churrasqueiro Gourmet — Templo do Churrasco<br>
+Rio de Janeiro</p>
+        ]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+            <wp:meta_value><![CDATA[Aprenda a técnica certa para salgar a picanha com o churrasqueiro Guilherme Santos do Rio de Janeiro. Método Brasa Viva revelado neste guia completo!]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_focuskw]]></wp:meta_key>
+            <wp:meta_value><![CDATA[como salgar picanha churrasco]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ============================================================
+         POST 2 — Quanto de carne por pessoa
+         ============================================================ -->
+    <item>
+        <title>Quanto de carne por pessoa no churrasco? Calcule certo e impressione</title>
+        <link>https://templodochurrasco.com.br/quanto-de-carne-por-pessoa-churrasco</link>
+        <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[guilherme]]></dc:creator>
+        <category domain="category" nicename="dicas-de-churrasco"><![CDATA[Dicas de Churrasco]]></category>
+        <category domain="post_tag" nicename="calculadora-carne"><![CDATA[calculadora de carne]]></category>
+        <category domain="post_tag" nicename="quantidade-carne-churrasco"><![CDATA[quantidade carne churrasco]]></category>
+        <category domain="post_tag" nicename="carne-por-pessoa"><![CDATA[carne por pessoa]]></category>
+        <wp:post_date><![CDATA[2026-03-11 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_name><![CDATA[quanto-de-carne-por-pessoa-churrasco]]></wp:post_name>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <excerpt:encoded><![CDATA[Chega de sobrar ou faltar carne! Guia definitivo do churrasqueiro Guilherme Santos para calcular a quantidade certa de carne por pessoa no churrasco.]]></excerpt:encoded>
+        <content:encoded><![CDATA[
+<p>Uma das maiores dúvidas de quem vai fazer um churrasco — seja para a família ou para um evento — é: quanto de carne por pessoa eu preciso? Depois de anos organizando churrascos para famílias e grupos em todo o Rio de Janeiro, vou compartilhar os números que uso no Templo do Churrasco.</p>
+
+<h2>A Regra de Ouro: 400g por adulto</h2>
+
+<p>Para um churrasco moderado, com duração média de 3 horas, a referência padrão é <strong>400g de carne por adulto</strong>. Isso considera uma mistura de cortes diferentes — não 400g de picanha por pessoa (isso seria muito!), mas 400g no total entre todos os cortes escolhidos.</p>
+
+<p>Essa quantidade está calibrada para um evento onde o churrasco é o prato principal, mas há também guarnições como arroz, farofa, saladas e pão de queijo.</p>
+
+<h2>Fatores que mudam o cálculo</h2>
+
+<h3>1. Perfil dos convidados</h3>
+<ul>
+    <li><strong>Come pouco (light):</strong> 280-320g por pessoa</li>
+    <li><strong>Come moderado:</strong> 380-420g por pessoa</li>
+    <li><strong>Come muito (churrasqueiro nato):</strong> 500-600g por pessoa</li>
+</ul>
+
+<h3>2. Duração do evento</h3>
+<ul>
+    <li><strong>2 horas:</strong> reduza 20% do cálculo base</li>
+    <li><strong>3 horas:</strong> use o cálculo padrão</li>
+    <li><strong>4 horas:</strong> adicione 20%</li>
+    <li><strong>5+ horas:</strong> adicione 40% — a galera vai comer nas rodadas!</li>
+</ul>
+
+<h3>3. Tipo de evento</h3>
+<ul>
+    <li><strong>Almoço:</strong> as pessoas tendem a comer um pouco menos. Reduza 10%.</li>
+    <li><strong>Jantar:</strong> noite combina com menos carne. Reduza 15%.</li>
+    <li><strong>Festa/Celebração:</strong> as pessoas ficam até tarde e comem em vários momentos. Use o cálculo cheio.</li>
+</ul>
+
+<h3>4. Crianças</h3>
+<p>Para crianças até 12 anos, calcule metade da quantidade de um adulto. Mas tenha bastante linguiça e frango — essas carnes são as favoritas da criançada!</p>
+
+<h2>Tabela prática de quantidade de carne</h2>
+
+<table style="width:100%; border-collapse: collapse; margin: 1.5rem 0;">
+    <thead>
+        <tr style="background:#1A1A1A; color:white;">
+            <th style="padding: 1rem; text-align:left;">Convidados</th>
+            <th style="padding: 1rem; text-align:center;">Come Pouco</th>
+            <th style="padding: 1rem; text-align:center;">Moderado</th>
+            <th style="padding: 1rem; text-align:center;">Come Muito</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #eee;">
+            <td style="padding: 0.875rem 1rem;">10 adultos</td>
+            <td style="padding: 0.875rem; text-align:center;">3 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">4 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">5,5 kg</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; background: #fafafa;">
+            <td style="padding: 0.875rem 1rem;">20 adultos</td>
+            <td style="padding: 0.875rem; text-align:center;">6 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">8 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">11 kg</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+            <td style="padding: 0.875rem 1rem;">30 adultos</td>
+            <td style="padding: 0.875rem; text-align:center;">9 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">12 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">16,5 kg</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; background: #fafafa;">
+            <td style="padding: 0.875rem 1rem;">50 adultos</td>
+            <td style="padding: 0.875rem; text-align:center;">15 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">20 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">27,5 kg</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.875rem 1rem;">100 adultos</td>
+            <td style="padding: 0.875rem; text-align:center;">30 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">40 kg</td>
+            <td style="padding: 0.875rem; text-align:center;">55 kg</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Como distribuir entre os cortes</h2>
+
+<p>Uma boa composição para um churrasco de 10 pessoas (perfil moderado) seria:</p>
+
+<ul>
+    <li>Picanha: 1,5 kg (o destaque, a favorita!)</li>
+    <li>Alcatra: 1,0 kg (complementa muito bem)</li>
+    <li>Linguiça: 0,8 kg (para entrada e para as crianças)</li>
+    <li>Frango: 0,7 kg (alternativa mais leve)</li>
+    <li><strong>Total: 4 kg — exatamente o calculado para 10 adultos</strong></li>
+</ul>
+
+<h2>Quanto de carvão?</h2>
+
+<p>A regra que uso no Templo do Churrasco é: <strong>1,5 kg de carvão para cada 1 kg de carne</strong>. Para eventos mais longos, dobro essa quantidade. Nunca economize no carvão — a brasa baixa é inimiga do bom churrasco!</p>
+
+<h2>Use a calculadora online!</h2>
+
+<p>Se você quiser fazer esse cálculo de forma automática, <a href="/calculadora">acesse nossa Calculadora de Carne</a>. Basta inserir o número de convidados, o tipo de evento e os cortes desejados — ela faz todo o cálculo e ainda gera uma mensagem pronta para me enviar pelo WhatsApp!</p>
+
+<p><strong>Guilherme Santos</strong><br>
+Churrasqueiro Gourmet — Templo do Churrasco | Rio de Janeiro</p>
+        ]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+            <wp:meta_value><![CDATA[Guia completo: quanto de carne por pessoa no churrasco? Tabela prática e calculadora online do churrasqueiro Guilherme Santos do Rio de Janeiro.]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ============================================================
+         POST 3 — Churrasqueiro Profissional no Rio
+         ============================================================ -->
+    <item>
+        <title>Churrasqueiro profissional: por que contratar para seu evento no Rio de Janeiro</title>
+        <link>https://templodochurrasco.com.br/churrasqueiro-profissional-evento-rio-de-janeiro</link>
+        <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[guilherme]]></dc:creator>
+        <category domain="category" nicename="churrasqueiro-profissional"><![CDATA[Churrasqueiro Profissional]]></category>
+        <category domain="post_tag" nicename="churrasqueiro-profissional"><![CDATA[churrasqueiro profissional]]></category>
+        <category domain="post_tag" nicename="churrasqueiro-rio-de-janeiro"><![CDATA[churrasqueiro Rio de Janeiro]]></category>
+        <category domain="post_tag" nicename="churrasco-para-evento"><![CDATA[churrasco para evento]]></category>
+        <wp:post_date><![CDATA[2026-03-13 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_name><![CDATA[churrasqueiro-profissional-evento-rio-de-janeiro]]></wp:post_name>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <excerpt:encoded><![CDATA[Contratar um churrasqueiro profissional no Rio de Janeiro é a decisão mais inteligente para o seu evento. Descubra 7 razões práticas e como o Templo do Churrasco pode transformar seu evento.]]></excerpt:encoded>
+        <content:encoded><![CDATA[
+<p>Você está planejando um aniversário, uma confraternização ou uma festa em família no Rio de Janeiro e pensou em fazer o churrasco você mesmo? Entendo a empolgação — mas deixa eu te contar por que contratar um churrasqueiro profissional vai ser a melhor decisão que você vai tomar.</p>
+
+<h2>A realidade do churrasco "faça você mesmo"</h2>
+
+<p>Acontece o mesmo em quase todos os eventos: alguém fica preso na churrasqueira enquanto os outros curtem a festa. A carne sai no tempo errado, algumas peças ficam cruas, outras queimadas. No final, o "churrasqueiro voluntário" fica estressado, cansado e perdeu metade do evento.</p>
+
+<p>Esse é o problema que o Templo do Churrasco resolve.</p>
+
+<h2>7 razões para contratar um churrasqueiro profissional</h2>
+
+<h3>1. Você curte o seu próprio evento</h3>
+
+<p>Essa é a razão número 1. Quantas vezes você ficou preso na churrasqueira no seu próprio aniversário ou na festa que organizou? Com um churrasqueiro profissional, você vira convidado VIP no seu próprio evento. Bate papo, tira foto, dança — enquanto eu cuido de tudo na grelha.</p>
+
+<h3>2. Carne no ponto certo, toda vez</h3>
+
+<p>Assar carne no ponto certo é uma arte que leva anos para dominar. No Método Brasa Viva, controlo individualmente o ponto de cada corte. Picanha ao ponto, frango bem passado para quem prefere assim, costela desmanchando de tão macia — tudo saindo certo, na hora certa.</p>
+
+<h3>3. Nenhum desperdício de carne</h3>
+
+<p>Com um profissional gerenciando o churrasco, o aproveitamento das carnes é muito maior. Sem peças queimadas, sem carnes que precisam ser jogadas fora, sem o estresse de calcular errado. Isso significa que você gasta menos no total, mesmo pagando pelo profissional.</p>
+
+<h3>4. Organização e planejamento do menu</h3>
+
+<p>Antes de cada evento, planejo junto com o cliente todo o cardápio. Quantos quilos de cada corte, a ordem de servir (primeiro a linguiça, depois os cortes mais rápidos, por último a costela que precisa de mais tempo), os acompanhamentos — tudo pensado para o evento fluir perfeitamente.</p>
+
+<h3>5. Segurança alimentar</h3>
+
+<p>Churrasco mal preparado pode causar problemas de saúde. Um churrasqueiro profissional conhece as temperaturas internas corretas para cada tipo de carne, garante que nenhuma peça saia crua e mantém os alimentos na temperatura adequada até o serviço.</p>
+
+<h3>6. Apresentação e serviço de qualidade</h3>
+
+<p>No Churrasco Gourmet e no Pacote Deluxe do Templo do Churrasco, o serviço inclui garçons, apresentação caprichada das carnes e um atendimento que transforma o churrasco em uma experiência gourmet completa. Seus convidados vão ficar impressionados.</p>
+
+<h3>7. Paz de espírito</h3>
+
+<p>Talvez o benefício mais subestimado. Saber que um profissional está cuidando de tudo — das carnes ao buffet, dos equipamentos ao serviço — permite que você planeje o resto do evento com tranquilidade total.</p>
+
+<h2>Quanto custa um churrasqueiro profissional no Rio de Janeiro?</h2>
+
+<p>No Templo do Churrasco, temos opções para diferentes necessidades e orçamentos:</p>
+
+<ul>
+    <li><strong>Churrasqueiro Avulso:</strong> a partir de R$ 300 (você fornece as carnes e equipamentos)</li>
+    <li><strong>Churrasco Gourmet Completo:</strong> carnes nobres + buffet completo + garçons (sob consulta, varia com o número de convidados)</li>
+    <li><strong>Pacote Deluxe:</strong> R$ 105/pessoa — 12 cortes + buffet completo + sobremesas</li>
+</ul>
+
+<p>Quando você considera o valor do seu tempo, o risco de desperdiçar carnes caras e a diferença na qualidade, contratar um profissional é sempre o investimento mais inteligente.</p>
+
+<h2>Por que escolher o Templo do Churrasco?</h2>
+
+<p>Somos uma referência em churrascos gourmet no Rio de Janeiro desde 2018. Com mais de 380 eventos realizados, 7+ anos de experiência e 100% de satisfação dos clientes, o Templo do Churrasco é sinônimo de churrasco de verdade, feito na brasa, com amor e fogo.</p>
+
+<p>Quer um orçamento? Me chama no WhatsApp!</p>
+
+<p><strong>Guilherme Santos</strong><br>
+Churrasqueiro Gourmet — Templo do Churrasco | Rio de Janeiro</p>
+        ]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+            <wp:meta_value><![CDATA[Por que contratar um churrasqueiro profissional no Rio de Janeiro? 7 razões práticas do Templo do Churrasco de Guilherme Santos.]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ============================================================
+         POST 4 — Método Brasa Viva
+         ============================================================ -->
+    <item>
+        <title>Método Brasa Viva: o segredo do churrasco perfeito do Templo do Churrasco</title>
+        <link>https://templodochurrasco.com.br/metodo-brasa-viva-churrasco-perfeito</link>
+        <pubDate>Sun, 15 Mar 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[guilherme]]></dc:creator>
+        <category domain="category" nicename="metodo-brasa-viva"><![CDATA[Método Brasa Viva]]></category>
+        <category domain="category" nicename="tecnicas"><![CDATA[Técnicas]]></category>
+        <category domain="post_tag" nicename="metodo-brasa-viva"><![CDATA[método brasa viva]]></category>
+        <category domain="post_tag" nicename="churrasco-gourmet"><![CDATA[churrasco gourmet]]></category>
+        <category domain="post_tag" nicename="tecnica-churrasco"><![CDATA[técnica de churrasco]]></category>
+        <wp:post_date><![CDATA[2026-03-15 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_name><![CDATA[metodo-brasa-viva-churrasco-perfeito]]></wp:post_name>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <excerpt:encoded><![CDATA[Conheça o Método Brasa Viva, a metodologia exclusiva do Templo do Churrasco que garante churrascos perfeitos em cada evento. 4 etapas que fazem toda a diferença.]]></excerpt:encoded>
+        <content:encoded><![CDATA[
+<p>Depois de 7 anos e mais de 380 eventos realizados em todo o Rio de Janeiro, percebi que o que separa um churrasco bom de um churrasco inesquecível não é sorte, não é o equipamento caro e não é a qualidade das carnes sozinha. É o processo. É a metodologia. É o que chamamos aqui no Templo do Churrasco de Método Brasa Viva.</p>
+
+<h2>O que é o Método Brasa Viva?</h2>
+
+<p>O Método Brasa Viva é a metodologia exclusiva do Templo do Churrasco para garantir a excelência em cada evento. São 4 etapas sequenciais, cada uma igualmente importante, que juntas criam o resultado que 100% dos nossos clientes recomendam para amigos e família.</p>
+
+<p>Não é receita de bolo. É uma filosofia de trabalho que começa muito antes de acender o fogo e termina apenas quando o último pedaço de carne é servido e aprovado.</p>
+
+<h2>Etapa 1: Seleção das Carnes</h2>
+
+<p>Tudo começa com a matéria-prima. Não existe churrasco gourmet com carne mediana.</p>
+
+<p>Selecionamos pessoalmente cada corte para cada evento. Para a picanha, buscamos peças com capa de gordura uniforme de 1 a 2 centímetros — nem mais, nem menos. Para a alcatra, procuramos cortes com marmoreio adequado e coloração vermelho-rubi intensa. Para a costela, peças com gordura entremeada que vai derreter lentamente na brasa.</p>
+
+<p>Esse processo de seleção não tem atalho. É a diferença entre uma carne que impressiona e uma que apenas alimenta.</p>
+
+<h2>Etapa 2: Tempero 24 horas antes</h2>
+
+<p>Esse é o segredo que a maioria dos churrasqueiros não faz — e faz toda a diferença.</p>
+
+<p>No dia anterior ao evento, cada corte recebe seu tempero específico. Não existe uma fórmula única para todos. A picanha recebe sal grosso na medida certa. A costela bovina ganha uma pasta de especiarias que penetra nas fibras durante a madrugada. O frango é marinado com ingredientes que garantem suculência mesmo em cima da grelha.</p>
+
+<p>Esse tempo de 24 horas não é opcional — é fundamental. O sal e as especiarias precisam de tempo para se integrar à proteína, criar reações bioquímicas que vão resultar em mais sabor, melhor textura e aquela cor irresistível que você vê quando a carne chega à mesa.</p>
+
+<h2>Etapa 3: Controle Individual de Ponto</h2>
+
+<p>Na grelha, cada corte é monitorado individualmente. Isso significa que em um churrasco com 5 cortes diferentes, estou constantemente gerenciando 5 processos diferentes, cada um com seu tempo, temperatura e estágio de cozimento.</p>
+
+<p>A costela precisa de horas em fogo indireto. A picanha quer calor intenso por tempo curto. A linguiça gosta de fogo médio com movimentos frequentes. O frango exige cuidado especial para não ressecar por fora enquanto cozinha por dentro.</p>
+
+<p>Esse controle individual é o que garante que tudo chegue à mesa no momento certo, no ponto certo, sem aquele constrangimento de servir carne crua ou queimada.</p>
+
+<h2>Etapa 4: Só Serve Quando Está Perfeito</h2>
+
+<p>Esse é o princípio mais importante do Método Brasa Viva, e o que mais diferencia o Templo do Churrasco de qualquer outro serviço de churrasco no Rio de Janeiro.</p>
+
+<p>Antes de qualquer carne ir para a mesa, provo. Avalio o ponto, a textura, o sabor, a temperatura. Só depois de confirmar que está no nível que os nossos clientes merecem é que autorizo o serviço.</p>
+
+<p>Não existe pressão de tempo que me faça servir uma carne que não está perfeita. O compromisso é com a qualidade, e essa não é negociável.</p>
+
+<h2>O resultado do Método Brasa Viva</h2>
+
+<p>Em 380+ eventos realizados desde 2018, o resultado do Método Brasa Viva é consistente:</p>
+
+<ul>
+    <li>100% de satisfação dos clientes</li>
+    <li>Zero reclamações em toda a carreira</li>
+    <li>Convidados sempre pedem bis nas carnes</li>
+    <li>Clientes que voltam evento após evento</li>
+    <li>Indicações como principal fonte de novos clientes</li>
+</ul>
+
+<p>Esse não é acaso. É o resultado de um processo rigoroso, aplicado com dedicação em cada evento, independente do tamanho ou do orçamento.</p>
+
+<h2>Quer o Método Brasa Viva no seu evento?</h2>
+
+<p>Me chama no WhatsApp e vamos planejar um churrasco que vai fazer todo mundo pedir bis!</p>
+
+<p><strong>Guilherme Santos</strong><br>
+Criador do Método Brasa Viva<br>
+Templo do Churrasco — Rio de Janeiro</p>
+        ]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+            <wp:meta_value><![CDATA[Conheça o Método Brasa Viva do Templo do Churrasco — a metodologia de 4 etapas do churrasqueiro Guilherme Santos que garante churrascos perfeitos no Rio de Janeiro.]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ============================================================
+         POST 5 — 10 erros no churrasco
+         ============================================================ -->
+    <item>
+        <title>10 erros no churrasco que você nunca mais vai cometer</title>
+        <link>https://templodochurrasco.com.br/10-erros-churrasco-nunca-mais-cometer</link>
+        <pubDate>Tue, 18 Mar 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[guilherme]]></dc:creator>
+        <category domain="category" nicename="dicas-de-churrasco"><![CDATA[Dicas de Churrasco]]></category>
+        <category domain="category" nicename="tecnicas"><![CDATA[Técnicas]]></category>
+        <category domain="post_tag" nicename="erros-churrasco"><![CDATA[erros no churrasco]]></category>
+        <category domain="post_tag" nicename="dicas-churrasco"><![CDATA[dicas de churrasco]]></category>
+        <category domain="post_tag" nicename="churrasco-perfeito"><![CDATA[churrasco perfeito]]></category>
+        <wp:post_date><![CDATA[2026-03-18 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_name><![CDATA[10-erros-churrasco-nunca-mais-cometer]]></wp:post_name>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <excerpt:encoded><![CDATA[O churrasqueiro Guilherme Santos do Templo do Churrasco lista os 10 erros mais comuns no churrasco e como evitá-los. Aprenda com quem já viu de tudo em 380+ eventos!]]></excerpt:encoded>
+        <content:encoded><![CDATA[
+<p>Depois de 380 eventos realizados no Rio de Janeiro, vi de tudo. Carnes ótimas desperdiçadas por erros simples. Festas incríveis quase arruinadas por detalhes que fazem toda a diferença. Hoje vou compartilhar os 10 erros mais comuns que vejo nos churrascos amadores — e como você pode evitar cada um deles.</p>
+
+<h2>Erro 1: Colocar a carne fria direto na grelha</h2>
+
+<p>Esse é o erro número 1 e um dos mais prejudiciais. Carne gelada na grelha quente cria um choque térmico que resseca as fibras externas enquanto o interior fica frio. O resultado é carne seca por fora e crua por dentro.</p>
+
+<p><strong>Solução:</strong> Retire a carne da geladeira pelo menos 30 minutos antes (carnes grandes, como costela, até 1 hora antes). Deixe em temperatura ambiente antes de ir para a brasa.</p>
+
+<h2>Erro 2: Brasa fraca</h2>
+
+<p>Muita gente tem medo de brasa forte e acaba errando no sentido contrário: uma brasa fraca que "cozinha" a carne em vez de assá-la. A carne precisa de calor intenso para criar a crosta externa (reação de Maillard) que dá aquele sabor e cor característicos do churrasco.</p>
+
+<p><strong>Solução:</strong> A brasa está no ponto quando você consegue manter a mão a 15cm da grelha por apenas 3-4 segundos. Mais que isso, está fraca. Menos, está forte demais.</p>
+
+<h2>Erro 3: Furar a carne para verificar o ponto</h2>
+
+<p>Esse hábito destrói qualquer churrasco. Quando você fura a carne, libera os sucos internos que mantêm a carne suculenta. Resultado: carne seca e sem sabor.</p>
+
+<p><strong>Solução:</strong> Aprenda a verificar o ponto pelo toque. Carne crua é muito mole. Ao ponto tem uma resistência firme mas cede. Bem passada é dura. Com prática, você aprende rapidamente — é uma das primeiras coisas que ensino nos meus eventos.</p>
+
+<h2>Erro 4: Virar a carne mil vezes</h2>
+
+<p>Ficar virando e revirando a carne a cada minuto é um dos erros mais comuns. Isso impede a formação da crosta externa, deixa a carne sem cor e dificulta o controle do ponto.</p>
+
+<p><strong>Solução:</strong> Vire a carne no máximo 2 vezes. Coloque na grelha, espere a crosta se formar (quando a carne se soltar facilmente da grelha), vire uma vez e termine do outro lado.</p>
+
+<h2>Erro 5: Sal fino na picanha</h2>
+
+<p>O sal fino penetra rápido demais na carne e "cozinha" as fibras antes de ir para a grelha. Para a picanha especificamente, o sal fino é o inimigo número 1.</p>
+
+<p><strong>Solução:</strong> Use sempre sal grosso na picanha. Aplique generosamente 15 minutos antes de ir para a grelha. O sal vai derreter com o calor e criar aquela crosta irresistível.</p>
+
+<h2>Erro 6: Pouco carvão</h2>
+
+<p>Economizar no carvão é a decisão mais cara que você pode tomar. Carvão insuficiente resulta em brasa fraca que vai apagar durante o churrasco, e você vai passar vergonha na frente dos convidados tentando reanimar o fogo.</p>
+
+<p><strong>Solução:</strong> Para cada 1 kg de carne, calcule 1,5 kg de carvão. Em eventos longos, tenha o dobro. Carvão que sobrou pode ser guardado — carvão que faltou arruína o evento.</p>
+
+<h2>Erro 7: Não deixar a carne descansar</h2>
+
+<p>Tirou da grelha e foi fatiar imediatamente? Erro grave. Quando a carne sai da brasa, os sucos estão todos "agitados" nas fibras. Se você cortar agora, eles vão escorrer e a carne vai ficar seca.</p>
+
+<p><strong>Solução:</strong> Após sair da grelha, deixe a carne descansar por 3-5 minutos coberta levemente com papel alumínio. Os sucos vão se redistribuir e a carne vai ficar muito mais suculenta.</p>
+
+<h2>Erro 8: Usar espeto fino para cortes grandes</h2>
+
+<p>Picanha e cortes grandes não ficam bem em espetos finos. O calor não penetra uniformemente e a carne pode escorregar, caindo na brasa.</p>
+
+<p><strong>Solução:</strong> Use o espeto adequado para cada corte. Para picanha, prefiro espeto chato duplo. Para costela, diretamente na grelha. Para linguiça, espeto fino funciona bem.</p>
+
+<h2>Erro 9: Não ter um plano de sequência</h2>
+
+<p>Jogar tudo na grelha de uma vez é o caos. Carnes com tempos diferentes de cozimento vão sair no ponto errado — ou muito antes, ou muito depois do necessário.</p>
+
+<p><strong>Solução:</strong> Planeje a sequência. Primeiro coloque as carnes que demoram mais (costela, cupim). Depois as de tempo médio (alcatra, fraldinha). Por último as rápidas (linguiça, salsicha) e o frango.</p>
+
+<h2>Erro 10: Não experimentar antes de servir</h2>
+
+<p>Esse é o erro mais fácil de evitar e que faz toda a diferença. Servir carne sem provar é jogar no escuro.</p>
+
+<p><strong>Solução:</strong> Prove um pedacinho de cada corte antes de servir. Verifique o ponto, o sal, a textura. Isso é o que faço em cada evento do Templo do Churrasco — nenhuma carne vai à mesa sem minha aprovação.</p>
+
+<h2>Conclusão</h2>
+
+<p>Evitar esses 10 erros já vai elevar muito o nível do seu churrasco. Mas se quiser ter certeza de que vai sair perfeito, você sabe onde me encontrar! Me chama no WhatsApp e a gente planeja um churrasco que vai fazer todo mundo pedir bis.</p>
+
+<p><strong>Guilherme Santos</strong><br>
+Churrasqueiro Gourmet — Templo do Churrasco<br>
+Rio de Janeiro — 380+ eventos | 7 anos de experiência</p>
+        ]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+            <wp:meta_value><![CDATA[10 erros no churrasco que destroem a carne — e como evitá-los. Guilherme Santos, churrasqueiro gourmet do Rio de Janeiro, revela os segredos de 380+ eventos.]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ============================================================
+         PÁGINAS ESTÁTICAS
+         ============================================================ -->
+
+    <!-- Página Inicial -->
+    <item>
+        <title>Início</title>
+        <link>https://templodochurrasco.com.br</link>
+        <wp:post_date><![CDATA[2026-03-01 10:00:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[inicio]]></wp:post_name>
+        <wp:page_template><![CDATA[front-page.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema front-page.php -->]]></content:encoded>
+    </item>
+
+    <!-- Página Sobre -->
+    <item>
+        <title>Sobre</title>
+        <link>https://templodochurrasco.com.br/sobre</link>
+        <wp:post_date><![CDATA[2026-03-01 10:05:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[sobre]]></wp:post_name>
+        <wp:page_template><![CDATA[page-sobre.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema page-sobre.php -->]]></content:encoded>
+    </item>
+
+    <!-- Página Serviços -->
+    <item>
+        <title>Serviços</title>
+        <link>https://templodochurrasco.com.br/servicos</link>
+        <wp:post_date><![CDATA[2026-03-01 10:10:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[servicos]]></wp:post_name>
+        <wp:page_template><![CDATA[page-servicos.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema page-servicos.php -->]]></content:encoded>
+    </item>
+
+    <!-- Página Galeria -->
+    <item>
+        <title>Galeria</title>
+        <link>https://templodochurrasco.com.br/galeria</link>
+        <wp:post_date><![CDATA[2026-03-01 10:15:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[galeria]]></wp:post_name>
+        <wp:page_template><![CDATA[page-galeria.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Adicione suas fotos aqui via o editor de blocos do WordPress -->]]></content:encoded>
+    </item>
+
+    <!-- Página Contato -->
+    <item>
+        <title>Contato</title>
+        <link>https://templodochurrasco.com.br/contato</link>
+        <wp:post_date><![CDATA[2026-03-01 10:20:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[contato]]></wp:post_name>
+        <wp:page_template><![CDATA[page-contato.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema page-contato.php -->]]></content:encoded>
+    </item>
+
+    <!-- Página Calculadora -->
+    <item>
+        <title>Calculadora de Carne</title>
+        <link>https://templodochurrasco.com.br/calculadora</link>
+        <wp:post_date><![CDATA[2026-03-01 10:25:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[calculadora]]></wp:post_name>
+        <wp:page_template><![CDATA[page-calculadora.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema page-calculadora.php -->]]></content:encoded>
+    </item>
+
+    <!-- Página Política de Privacidade -->
+    <item>
+        <title>Política de Privacidade</title>
+        <link>https://templodochurrasco.com.br/privacidade</link>
+        <wp:post_date><![CDATA[2026-03-01 10:30:00]]></wp:post_date>
+        <wp:post_status><![CDATA[publish]]></wp:post_status>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_name><![CDATA[privacidade]]></wp:post_name>
+        <wp:page_template><![CDATA[page-privacidade.php]]></wp:page_template>
+        <content:encoded><![CDATA[<!-- Conteúdo gerado pelo tema page-privacidade.php -->]]></content:encoded>
+    </item>
+
+</channel>
+</rss>
