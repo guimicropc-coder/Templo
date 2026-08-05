@@ -1,0 +1,4 @@
+# Credenciais / segredos — nunca commitar
+.env
+.env.*
+*.env
