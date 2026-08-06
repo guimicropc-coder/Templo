@@ -385,6 +385,102 @@ get_header();
 </section>
 
 <!-- =====================================================
+     SEÇÃO 5.5 — EVENTOS ANTERIORES
+     ===================================================== -->
+<section class="section" id="eventos-anteriores" aria-label="Fotos de eventos anteriores" style="background: var(--color-white);">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-label">Prova na prática</span>
+            <h2 class="section-title title-underline">Eventos Anteriores 🔥</h2>
+            <p class="section-subtitle">
+                Um pouco do que já rolou em churrascos por todo o Rio de Janeiro com o Método Brasa Viva.
+            </p>
+        </div>
+
+        <div class="gallery-grid" aria-label="Fotos de eventos anteriores do Templo do Churrasco">
+
+            <?php
+            $eventos_anteriores = [
+                'camorim'         => 'Camorim',
+                'caxias'          => 'Caxias',
+                'iraja'           => 'Irajá',
+                'jacarepagua'     => 'Jacarepaguá',
+                'largo-do-bicao'  => 'Largo do Bicão',
+                'madureira'       => 'Madureira',
+                'olaria'          => 'Olaria',
+                'recreio'         => 'Recreio',
+                'rio-de-janeiro'  => 'Rio de Janeiro',
+                'rj'              => 'Rio de Janeiro — RJ',
+                'vila-da-penha'   => 'Vila da Penha',
+                'vila-valqueire'  => 'Vila Valqueire',
+                'vista-alegre'    => 'Vista Alegre',
+            ];
+
+            foreach ( $eventos_anteriores as $slug => $bairro ) :
+                $filename = 'buffet-de-churrasco-' . $slug . '.jpg';
+                $img_url  = TDC_URI . '/assets/images/galeria-home/' . $filename;
+                $alt      = 'Buffet de churrasco em ' . $bairro . ' — Templo do Churrasco';
+            ?>
+                <div class="gallery-item fade-in"
+                     data-full="<?php echo esc_url( $img_url ); ?>"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ver foto: <?php echo esc_attr( $alt ); ?>"
+                     onclick="openLightbox('<?php echo esc_js( $img_url ); ?>')"
+                     onkeypress="if(event.key==='Enter') openLightbox('<?php echo esc_js( $img_url ); ?>')">
+                    <img src="<?php echo esc_url( $img_url ); ?>"
+                         alt="<?php echo esc_attr( $alt ); ?>"
+                         loading="lazy">
+                    <div class="gallery-item-overlay" aria-hidden="true">
+                        <span>🔍</span>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="<?php echo esc_url( home_url( '/galeria' ) ); ?>" class="btn btn-outline-primary btn-lg">
+                Ver Galeria Completa
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Lightbox — eventos anteriores -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar foto">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar galeria">×</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Foto do churrasco — Templo do Churrasco">
+</div>
+
+<script>
+function openLightbox(src) {
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    lb.focus();
+}
+
+function closeLightbox() {
+    const lb = document.getElementById('lightbox');
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.getElementById('lightbox').addEventListener('click', function (e) {
+    if (e.target === this) closeLightbox();
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+<!-- =====================================================
      SEÇÃO 6 — DEPOIMENTOS
      ===================================================== -->
 <section class="testimonials-section section" id="depoimentos" aria-label="Depoimentos de clientes">
